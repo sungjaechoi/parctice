@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .on {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li style="background: red">1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+      <li>6</li>
+      <li>7</li>
+      <li>8</li>
+      <li>9</li>
+      <li>10</li>
+    </ul>
+    <button>Test</button>
+
+    <script>
+      function testHandler() {
+        alert("Hello world");
+      }
+      //querySelectorAll 전체 선택
+      const btn = document.querySelectorAll("button");
+      //querySelector 하나 선택인데 여러개일 경우 첫번째 선택
+      const liFirst = document.querySelector("ul>li");
+      console.log(liFirst);
+
+      //el "ul"
+      //   const 자전거수리 = (자전거) => {
+      //     const res = 수리(자전거); //ul찾았음.
+      //     return res;
+      //   };
+
+      //   const aa = 자전거수리(자전거);
+      //f2라는 함수에 ul을 넣은 값이 aa임!
+      //???f2는 뭐임?? -> 함수넹
+      // ??? f2에 ul을 인자로 넣으면 어떻게 댐?? 어? 리턴값이 있네?
+      //   const aa = res;
+
+      const f = () => {
+        //콘솔로그는 괄호안에 담긴 값을 화면에 찍어줌
+        console.log(document.querySelector("div"));
+        // console.log("실행댐");
+      };
+
+      //   f();
+      //   liFirst.addEventListener("click", f);
+
+      btn.addEventListener("click", testHandler);
+      // if (liFirst.style.backgroundColor == "red") {
+      //   liFirst.style.background = "green";
+      // }
+      // if (liFirst.style.background == "green") {
+      //   liFirst.style.background = "red";
+      // }
+      //   });
+
+      // document.querySelector(인자) {
+      //     찾는로직 (인자) 를 찾아라.
+      //     const result = 찾은놈
+      //     return result
+      // }
+      function aa() {}
+      console.log(li);
+    </script>
+  </body>
+</html>

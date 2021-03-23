@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        list-style: none;
+      }
+      nav {
+        background: red;
+      }
+      nav ul {
+        display: flex;
+      }
+      nav > ul > li {
+        text-align: center;
+        background: pink;
+        /* 전체 */
+        margin: 5px;
+        /* 상하5 좌우 10 */
+        margin: 5px 10px;
+        /* 상80 좌우 10  하60*/
+        margin: 80px 10px 60px;
+        /* 상하좌우 */
+        margin: 5px 10px 5px 5px;
+        margin-left: 200px;
+      }
+
+      nav ul > li > ul {
+        display: flex;
+      }
+      nav ul > li > ul > li {
+        display: flex;
+      }
+      .margin-test-area {
+        background: green;
+        height: 200px;
+      }
+      .margin-test-area2 {
+        background: rgb(75, 131, 75);
+        height: 200px;
+      }
+
+      .margin-test-area:hover
+        + .margin-test-area2
+        + .margin-test-area2
+        + .margin-test-area2
+        + .margin-test-area2
+        .margin-target {
+        background: red;
+      }
+      /* .margin-target:hover {
+        background: red;
+      } */
+      .margin-target {
+        background: yellow;
+        width: 100px;
+        height: 100px;
+        /* margin-left: auto;
+        margin-right: auto; */
+        /* margin: auto; */
+        /* margin: 0 auto; */
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            213123123123
+            <ul>
+              <li>aaaaaaaaa</li>
+              <li>aaaaaaaaa</li>
+              <li>aaaaaaaaa</li>
+              <li>aaaaaaaaa</li>
+            </ul>
+          </li>
+          <li>
+            213123123123
+            <ul>
+              <li>aaaaaaaaa</li>
+              <li>aaaaaaaaa</li>
+              <li>aaaaaaaaa</li>
+              <li>aaaaaaaaa</li>
+            </ul>
+          </li>
+          <li>
+            213123123123
+            <ul>
+              <li>aaaaaaaaa</li>
+              <li>aaaaaaaaa</li>
+              <li>aaaaaaaaa</li>
+              <li>aaaaaaaaa</li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="margin-test-area">
+        <div class="margin-target">마진</div>
+      </div>
+      <div class="margin-test-area2">
+        <div class="margin-target">마진2</div>
+      </div>
+      <div class="margin-test-area2">
+        <div class="margin-target">마진2</div>
+      </div>
+      <div class="margin-test-area2">
+        <div class="margin-target">마진2</div>
+      </div>
+      <div class="margin-test-area2">
+        <div class="margin-target">
+          마진2
+          <div>
+            <a href="">
+              <span></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="margin-test-area2">
+        <div class="margin-target">마진2</div>
+      </div>
+    </header>
+  </body>
+</html>

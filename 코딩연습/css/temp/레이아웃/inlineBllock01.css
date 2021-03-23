@@ -1,0 +1,54 @@
+body {
+  background: #999;
+  width: 1000px;
+  margin: 0 auto;
+}
+/* header */
+#header {
+  background: #4444;
+  width: 1000px;
+}
+.long-area {
+  display: inline-block;
+}
+.header-nav {
+  display: inline-block;
+}
+.header-nav ul {
+  padding: 0 0;
+  margin: 0 0;
+  font-size: 0;
+}
+
+.header-nav li {
+  display: inline-block;
+  margin-left: 80px;
+  font-size: 16px;
+}
+/* section 1*/
+.content1 {
+  background: royalblue;
+  width: 1000px;
+  height: 300px;
+}
+
+/* section 2 */
+.content2 {
+}
+.content2 ul {
+  margin: 50px 0px;
+  padding: 0px 0px;
+}
+
+.content2 ul li {
+  list-style: none;
+  display: inline-block;
+}
+.content2 ul li + li {
+  margin-left: 85px;
+}
+.content2 ul li div {
+  background: skyblue;
+  width: 270px;
+  height: 200px;
+}

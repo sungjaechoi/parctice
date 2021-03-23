@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //{}겍체 리터럴 (객체를 만들 수 있는 최소표현)
+      //[]배열 리터럴 (배열을 만들 수 있는 최소표현)
+      //   const a = {};
+      //   const b = [];
+
+      const korea = [
+        {
+          글번호: 1,
+          글제목: "블라블라",
+        },
+        {},
+        {},
+        {},
+      ];
+      const incheon = {
+        name: "인천",
+        area: ["해운대구", "기타등등"],
+        hasSee: true,
+        speakArea() {
+          console.log(`${this.name}에는 ${this.area[0]}가 있습니다.`);
+        },
+      };
+      korea.incheon = incheon;
+      console.log(korea);
+      incheon.speakArea;
+    </script>
+  </body>
+</html>

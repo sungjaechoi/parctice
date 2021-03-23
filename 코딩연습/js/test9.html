@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      li {
+        height: 40px;
+        background: red;
+        display: flex;
+        align-items: center;
+      }
+      li:nth-child(even) {
+        background: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <button type="button">추가</button>
+    <ul></ul>
+    <script>
+      const elUl = document.querySelector("ul");
+      const btnEl = document.querySelector("button");
+      const data = [
+        { title: "제목1", number: 1 },
+        { title: "제목2", number: 2 },
+        { title: "제목3", number: 3 },
+      ];
+      const dataLength = data.length;
+      let currentNumber = 0;
+
+      // 에드이벤트리스너 : 야 이거 되면(click), 이거 해! (함수를 넣던지, 아니면 그냥 이름없이 함수 바로 넣어서 이걸로해~)
+      btnEl.addEventListener("click", () => {
+        if (currentNumber < dataLength) {
+          console.log("이프문 실행됨");
+          console.log(dataLength);
+          console.log(currentNumber);
+          console.log("--------------------------------");
+
+          console.log(currentNumber);
+
+          let t = data[currentNumber].title;
+          let n = data[currentNumber].number;
+          let elLi = document.createElement("li");
+          let elSpan = document.createElement("span");
+          let elP = document.createElement("p"); //<p></p>
+          // li>span+p
+          elSpan.innerText = n;
+          elP.innerText = t;
+          elLi.append(elSpan);
+          elLi.append(elP);
+          elUl.append(elLi);
+          console.log(elLi);
+          currentNumber++;
+        }
+
+        // for (let i = 0; i < data.length; i++) {
+        //   // console.log(data[0]);
+        //   let t = data[i].title;
+        //   let n = data[i].number;
+        //   let elLi = document.createElement("li");
+        //   let elSpan = document.createElement("span");
+        //   let elP = document.createElement("p"); //<p></p>
+        //   // li>span+p
+        //   elSpan.innerText = n;
+        //   elP.innerText = t;
+        //   elLi.append(elSpan);
+        //   elLi.append(elP);
+        //   elUl.append(elLi);
+        //   console.log(elLi);
+        // }
+      });
+    </script>
+  </body>
+</html>

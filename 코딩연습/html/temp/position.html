@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .granfar {
+        height: 400px;
+        background: pink;
+        display: flex;
+        align-items: center;
+        position: relative;
+      }
+      /* relative / fixed / sticky / absolute 를 기준으로 앱솔이 움직임
+	     다시 정리하자면 static 상태가 아니라면, 앱솔이 참고하고 움직임 
+	  */
+      .father {
+        width: 100%;
+        height: 300px;
+        background: green;
+      }
+      .me {
+        width: 200px;
+        height: 200px;
+        background: yellow;
+        position: absolute;
+        top: 0;
+      }
+      /* .you {
+        width: 200px;
+        height: 200px;
+        background: black;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="granfar">
+      <div class="father">
+        <div class="me">me</div>
+        <div class="you">me</div>
+      </div>
+    </div>
+  </body>
+</html>

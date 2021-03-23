@@ -1,0 +1,42 @@
+body {
+  background: hotpink;
+}
+
+#wrap {
+  width: 1000px;
+  height: 300px;
+  margin: 0 auto;
+  font-size: 60px;
+  color: #fff;
+  text-align: center;
+  text-transform: unset;
+  border: yellow;
+}
+.side {
+  width: 300px;
+  height: 900px;
+  float: left;
+  line-height: 900px;
+  background-color: cyan;
+}
+.header {
+  width: 700px;
+  height: 300px;
+  float: left;
+  line-height: 300px;
+  background-color: darkblue;
+}
+.contents {
+  width: 700px;
+  height: 300px;
+  float: left;
+  line-height: 300px;
+  background-color: darkgoldenrod;
+}
+.footer {
+  width: 700px;
+  height: 300px;
+  float: left;
+  line-height: 300px;
+  background-color: darkred;
+}

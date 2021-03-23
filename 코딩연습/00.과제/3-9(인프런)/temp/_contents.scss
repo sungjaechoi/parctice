@@ -1,0 +1,112 @@
+body {
+  width: 1300px;
+  margin: 0 auto;
+}
+#header {
+  // width: 1230px;
+  height: 60px;
+  background: #fffafa;
+  font-size: 0;
+  text-align: center;
+
+  .longo-area {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 20px;
+    margin-right: 30px;
+    img {
+    }
+  }
+  .header-nav {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 20px;
+    font-size: 0;
+    .nav-list {
+      display: inline-block;
+      font-size: 20px;
+      & + .nav-list {
+        margin-left: 30px;
+      }
+    }
+  }
+  .search {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0px;
+    margin: 0 10px 0 120px;
+
+    .text {
+      width: 177px;
+      height: 21px;
+      vertical-align: middle;
+      border: solid #f6f6f6;
+    }
+    .button {
+      width: 40px;
+      height: 27px;
+      vertical-align: middle;
+      background: url(/img/20210310_231014_2.png) center;
+      border: solid #f6f6f6;
+      border-radius: 4px;
+    }
+  }
+  .ect-menu {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 20px;
+    .dashboard {
+      border: solid #00c471;
+      border-radius: 10px;
+      background: #00c471;
+      margin-left: 5px;
+      a {
+        color: #fffafa;
+      }
+    }
+  }
+  .header-icon {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 20px;
+    margin: 0 20px;
+  }
+}
+#footer {
+  // width: 1230px;
+  font-size: 0px;
+  color: darkgray;
+  background: #303740;
+  text-decoration: none;
+  .footer-longo {
+    display: inline-block;
+    font-size: 12px;
+    margin-bottom: 10px;
+    img {
+      vertical-align: middle;
+    }
+    span {
+      vertical-align: middle;
+    }
+  }
+  .address {
+    display: block;
+    font-size: 12px;
+    p {
+      margin: 10px 0;
+      a {
+        text-decoration: none;
+        color: darkgray;
+      }
+    }
+  }
+}
+.border {
+  border-left: solid darkgray;
+  border-right: solid darkgray;
+  margin: 0px 5px;
+}
+a {
+  text-decoration: none;
+  color: #303740;
+}

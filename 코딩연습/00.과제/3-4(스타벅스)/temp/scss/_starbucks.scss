@@ -1,0 +1,193 @@
+body {
+  background: rgb(22, 21, 21);
+  color: honeydew;
+}
+
+#header {
+  background: #e5e5e5;
+  width: 100%;
+  font-size: 0;
+  height: 145px;
+  display: inline-block;
+  #longo-area {
+    margin-bottom: -123px;
+    padding-left: 250px;
+    img {
+      margin-top: 10px;
+    }
+  }
+
+  .header-nav {
+    .nav-usr {
+      font-size: 15px;
+      text-align: center;
+      padding-left: 500px;
+      & a + a {
+        margin-left: 25px;
+      }
+      & a + a + span {
+        margin-left: 25px;
+      }
+      & .button button {
+        width: 15px;
+        height: 15px;
+        border-radius: 5px;
+      }
+    }
+    .nav-list {
+      font-size: 18px;
+      margin: 70px 0 0 530px;
+
+      ul .list {
+        display: inline-block;
+        list-style-type: none;
+        // float: left;
+        //float:left 사용할거면, inline-block 제거.
+        margin-right: 30px;
+        & .list + .list + .list + .list + .list {
+          margin-left: 400px;
+        }
+      }
+    }
+  }
+}
+
+#container {
+  #sing-in {
+    height: 270px;
+    background: rgb(7, 36, 7);
+
+    .sing-in-longo-area {
+      text-align: center;
+      padding-right: 700px;
+      img {
+        height: 160px;
+        margin-top: 20px;
+      }
+      p {
+        font-size: 30px;
+      }
+      span {
+        font-size: 35px;
+        font-weight: bold;
+      }
+    }
+    .sing-in-content {
+      margin-left: 500px;
+      .sing-in-content-reward {
+        text-align: left;
+        margin-top: -210px;
+        dt {
+          font-size: 25px;
+          font-weight: bold;
+          margin-bottom: 20px;
+        }
+        dd {
+          font-size: 16px;
+          //   margin-top: 20px;
+        }
+        dd {
+          span {
+            font-weight: bold;
+          }
+        }
+        .reward-button {
+          text-align: end;
+          padding-right: 170px;
+          margin-top: 10px;
+        }
+      }
+    }
+    .sing-in-content-gift {
+      text-align: center;
+      text-align: left;
+      font-size: 14px;
+      p {
+        span {
+          font-weight: bold;
+        }
+      }
+      .gift-button {
+        text-align: end;
+        padding-right: 165px;
+      }
+    }
+  }
+}
+#footer {
+  .footer-nav {
+    font-size: 0;
+    ul {
+      .nav-list {
+        display: inline-block;
+        width: calc(20% - (40px / 5));
+        font-size: 15px;
+        margin-top: 50px;
+        text-align: center;
+        min-height: 210px;
+        vertical-align: top;
+        background: red;
+        dl {
+          dt {
+            margin-bottom: 30px;
+          }
+          dd {
+          }
+          & dd + dd {
+            margin-top: 15px;
+          }
+        }
+        & + .nav-list {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+  .footer-award {
+    font-size: 0;
+    ul {
+      .award-list {
+        display: inline-block;
+        width: calc(16.66% - (20px / 6));
+        font-size: 13px;
+        margin-top: 50px;
+        text-align: left;
+        min-height: 210px;
+        vertical-align: top;
+
+        dl {
+          dt {
+            margin-bottom: 10px;
+            .award-img {
+              display: inline-block;
+              width: 25px;
+              height: 25px;
+              background: url(/icon.png) -148px -118px;
+              vertical-align: middle;
+            }
+          }
+          dd {
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+          }
+          & dd + dd {
+            margin-top: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.test {
+  width: 1000px;
+  background: red;
+  height: 300px;
+  li {
+    display: inline-block;
+    width: 100px;
+    height: 300px;
+    background: royalblue;
+  }
+}

@@ -1,0 +1,31 @@
+.flex-list {
+  padding: 0 10px;
+  display: flex;
+  justify-content: flex-end;
+  justify-content: center;
+  // justify-content: start;
+  justify-content: space-between;
+  background: blue;
+  // flex-wrap: wrap;
+  > li {
+    //플렉스 아이탬 너낌임
+    width: 30%;
+    background: red;
+    height: 100px;
+    & + li {
+      margin-left: 10px;
+    }
+    > ul {
+      display: flex;
+      justify-content: center;
+      > li {
+        width: 10%;
+        height: 20px;
+        background: pink;
+        & + li {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}

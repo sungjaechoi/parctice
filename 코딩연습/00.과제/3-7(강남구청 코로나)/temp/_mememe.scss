@@ -1,0 +1,221 @@
+body {
+  background: #ffff;
+}
+
+#longo-area {
+  height: 80px;
+  font-size: 0;
+  text-align: center;
+  margin-top: 30px;
+
+  div {
+    display: inline-block;
+    margin-right: 150px;
+    vertical-align: middle;
+    line-height: 43px;
+  }
+
+  h1 {
+    display: inline-block;
+    width: 228px;
+    margin-right: 150px;
+    font-size: 25px;
+  }
+
+  span {
+    font-size: 20px;
+  }
+}
+
+#container {
+  #covid19-img-area {
+    font-size: 0;
+    height: 130px;
+    text-align: center;
+    ul {
+      .img-list {
+        display: inline-block;
+        a {
+          img {
+            width: 271px;
+            height: 100px;
+          }
+        }
+        & + .img-list {
+          margin-left: 5px;
+        }
+        & + .img-list + .img-list {
+          width: 130px;
+        }
+        & + .img-list + .img-list {
+          a {
+            img {
+              width: 130px;
+            }
+          }
+        }
+      }
+    }
+  }
+  #covid19-action {
+    background: #f8f8f8;
+    font-size: 0;
+    .action-title {
+      text-align: center;
+      font-size: 20px;
+      margin-bottom: 20px;
+      padding-top: 40px;
+    }
+    .action-icon {
+      .icon-list {
+        display: inline-block;
+        font-size: 10px;
+        width: calc(14.28% - (70px / 7));
+        text-align: center;
+        div {
+          img {
+            border-radius: 40px;
+          }
+        }
+        dl {
+          margin-top: 15px;
+        }
+        & + .icon-list {
+          margin-left: 10px;
+        }
+      }
+    }
+    .action-tel {
+      margin-top: 35px;
+      .tel {
+        display: inline-block;
+        width: calc(33.33% - (40px / 3));
+        height: 210px;
+        min-height: 150px;
+        font-size: 20px;
+        vertical-align: top;
+        overflow: hidden;
+        margin-left: 10px;
+        a {
+          text-decoration: none;
+          color: #ffffff;
+          // font-weight: 100px;
+          // 왜 폰트가 안먹는거야
+        }
+        & + .tel {
+          margin-left: 10px;
+        }
+        .red-blue {
+          background: #da6d56;
+          border: solid #da6d56;
+          border-radius: 10px;
+          color: #ffffff;
+          height: 210px;
+          padding: 10px;
+          span {
+            color: #ecc8ad;
+          }
+          dt {
+            padding: 15px 0 20px 0;
+            span {
+              font-size: 5px;
+              padding-left: 140px;
+            }
+          }
+          dd + dd + dd {
+            margin-top: 20px;
+          }
+          dd {
+            padding-top: 10px;
+          }
+        }
+        .blue {
+          background: #4699ad;
+          border: solid #4699ad;
+        }
+        .tel-list {
+          // border: solid royalblue;
+          height: calc(33.33% - (10px / 3));
+          text-align: center;
+          font-size: 0;
+          .margin {
+            margin-left: 27px;
+          }
+          & + .tel-list {
+            margin-top: 10px;
+          }
+        }
+        .block {
+          .tel-list-block {
+            // background: chartreuse;
+            display: inline-block;
+            border: solid black;
+            border-radius: 10px;
+            padding: 5px 25px 10px 15px;
+            font-size: 20px;
+            .padding {
+              padding: 0 25px;
+              dd {
+                a {
+                  color: black;
+                }
+              }
+            }
+            .padding2 {
+              padding: 9px 68px 0px 68px;
+              dt {
+                a {
+                  color: black;
+                }
+              }
+            }
+
+            dl {
+              dt + dd {
+                padding-top: 6px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  #covid19-service {
+    font-size: 0;
+    .service {
+      // background: red;
+      display: inline-block;
+      width: calc(33.33% - (15px / 3));
+      font-size: 20px;
+      text-align: center;
+      padding: 90px 0 0 10px;
+      .service-title {
+        font-size: 25px;
+        // font-weight: 20px
+        margin-bottom: 10px;
+      }
+      .service-tit-img {
+        img {
+          width: 440px;
+          height: 450px;
+        }
+      }
+      .service-block {
+        text-align: left;
+        div {
+          img {
+            width: 440px;
+            height: 450px;
+          }
+        }
+        dt {
+          font-size: 15px;
+          color: #da6d56;
+        }
+      }
+      & + .service {
+        margin-left: 5px;
+      }
+    }
+  }
+}

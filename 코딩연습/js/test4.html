@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      li {
+        height: 30px;
+        background-color: greenyellow;
+      }
+      li:nth-child(even) {
+        background-color: rebeccapurple;
+      }
+    </style>
+  </head>
+  <body>
+    <button type="button">버튼</button>
+    <ul></ul>
+
+    <!-- 
+        버튼을 클릭한다. <- button.addEventListener('click', ()=>{
+            
+        })
+         1) ul에 li를 추가한다.
+    -->
+    <script>
+      const ul = document.querySelector("ul"); //있는거 잡아옴
+      const button = document.querySelector("button"); //있는거 잡아옴
+      button.addEventListener("click", () => {
+        const li = document.createElement("li"); //없는거 만들었고
+        ul.append(li);
+      }); //잡아온놈을 누르면 먼가 하겠다.
+
+      console.log(button);
+    </script>
+  </body>
+</html>

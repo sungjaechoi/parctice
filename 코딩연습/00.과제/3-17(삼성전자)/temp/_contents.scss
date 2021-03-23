@@ -1,0 +1,218 @@
+.item {
+  background: pink;
+}
+#longo-area {
+  .longo-area-inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: solid aliceblue;
+    border-bottom: solid aliceblue;
+
+    .longo-img {
+    }
+    .header-nav-area {
+      .header-nav {
+        .nav-ul {
+          display: flex;
+          .nav-item {
+            & + .nav-item {
+              margin-left: 50px;
+            }
+            a {
+              text-decoration: none;
+              color: black;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+    .icon-area {
+      .icons {
+        display: flex;
+        .icon-item {
+          width: 39px;
+          height: 78px;
+          background-color: blue;
+          & + .icon-item {
+            margin-left: 10px;
+          }
+          // 배경이 안들어가요....
+          .bg1 {
+            width: 39px;
+            height: 78px;
+            display: inline-block;
+            background-color: blue;
+            background: url(/img/20210317_083840_10.png);
+          }
+          .bg2 {
+            width: 39px;
+            height: 78px;
+            background-color: blue;
+            background: url(/img/20210317_083840_11.png);
+          }
+          .bg3 {
+            width: 39px;
+            height: 78px;
+            background-color: blue;
+            background: url(/img/20210317_083840_12.png);
+          }
+        }
+      }
+    }
+  }
+}
+#conteiner {
+  .proudct-service {
+    .proudct-service-inner {
+      width: 1300px;
+      margin: 0 auto;
+      .service-menu {
+        .meun-ul {
+          display: flex;
+          justify-content: center;
+          padding: 30px 0;
+          .item-btn {
+            & + .item-btn {
+              margin-left: 30px;
+            }
+            button {
+              border-style: none;
+              border-color: none;
+              // 알려주세요??? 이미지 있음
+              font-weight: bold;
+            }
+
+            &.on {
+              //아이템 item-btn on 멀티클래스로 같이 있을때 그안 버튼을 가르킴
+              > button {
+                border-bottom: 2px solid black;
+              }
+            }
+          }
+        }
+      }
+      .select-shop {
+        width: 1300px;
+        .select-shop-ul {
+          display: flex;
+          flex-wrap: wrap;
+          .select-shop-item {
+            padding-top: 30px;
+            width: 300px;
+            height: 300px;
+            background: #f4f4f4;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px;
+            & + .select-shop-item {
+              // margin-left: 10px;
+            }
+            .select-shop-img {
+              & + .select-shop-text {
+                margin-top: 30px;
+              }
+            }
+            .select-shop-text {
+              dt {
+                font-size: 30px;
+                font-weight: bold;
+              }
+              dd {
+                font-size: 20px;
+                margin-top: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .new-product {
+    .new-product-inner {
+      width: 1350px;
+      height: 500px;
+      margin: 0 auto;
+      background: url(/img/20210317_083840_13.png) center;
+      font-weight: bold;
+      .new-product-title {
+        h3 {
+          padding-top: 10px;
+          font-size: 30px;
+          text-align: center;
+        }
+      }
+      .new-product-menu {
+        .new-product-menu-ul {
+          display: flex;
+          justify-content: center;
+        }
+        .new-product-menu-li {
+          margin-top: 10px;
+          & + .new-product-menu-li {
+            margin-left: 20px;
+          }
+          a {
+            text-decoration: none;
+            color: black;
+          }
+        }
+      }
+      .new-product-menu-content {
+        height: 420px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        justify-content: flex-end;
+
+        .new-product-menu-content-dl {
+          dt {
+            font-size: 40px;
+          }
+          dd {
+            font-size: 20px;
+            font-weight: none;
+            // 왜 안먹을까요?
+          }
+        }
+        .purchase-link {
+          padding-top: 10px;
+          a {
+            text-decoration: none;
+            color: white;
+            border: solid black;
+            border-radius: 30px;
+            background: black;
+            font-size: 10px;
+            padding: 5px;
+          }
+        }
+      }
+    }
+  }
+  .total-menu {
+    .total-menu-inner {
+      display: flex;
+      justify-content: space-around;
+      .menu-area {
+        .menu-title {
+          // width: 200px;
+          // height: 50px;
+        }
+        .menu-ul {
+          height: 159px;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+
+          .menu-item {
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      a {
+        display: block;
+        width: 200px;
+        height: 200px;
+        border: 1px solid rebeccapurple;
+      }
+      .on {
+        background: red;
+      }
+    </style>
+  </head>
+  <body>
+    <a class="on" href="#"></a>
+    <!-- 빨간색 적당한 크기 A 만들어주세여 -->
+    <script>
+      const btn = document.querySelector("a"); // a
+      let currentCircle = 0;
+
+      //   const f = () => {
+      //     btn.classList.add("on2");
+      //   };
+
+      //   btn.addEventListener("click", f);
+      btn.addEventListener("click", () => {
+        console.log("실행");
+        btn.classList.toggle("on");
+      });
+
+      // a{
+
+      //     addEventListener(){}
+      //     classList{
+      //   toggle(){}
+      //         add(){}
+      //         remove(){}
+      //     }
+
+      //   addEventListener(뭐할때 반응해영?, 뭘로 반응해여?){}
+      //   classList{
+      //         toggle(){}
+      //         add(){}
+      //         remove(){}
+      //     }
+      // }
+      console.log(btn);
+    </script>
+  </body>
+</html>

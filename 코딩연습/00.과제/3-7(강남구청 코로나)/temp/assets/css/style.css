@@ -1,0 +1,369 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.sr-only {
+  display: block;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+
+body {
+  background: #ffff;
+}
+
+#longo-area {
+  height: 80px;
+  font-size: 0;
+  text-align: center;
+  margin-top: 30px;
+}
+
+#longo-area div {
+  display: inline-block;
+  margin-right: 150px;
+  vertical-align: middle;
+  line-height: 43px;
+}
+
+#longo-area h1 {
+  display: inline-block;
+  width: 228px;
+  margin-right: 150px;
+  font-size: 25px;
+}
+
+#longo-area span {
+  font-size: 20px;
+}
+
+#container #covid19-img-area {
+  font-size: 0;
+  height: 130px;
+  text-align: center;
+}
+
+#container #covid19-img-area ul .img-list {
+  display: inline-block;
+}
+
+#container #covid19-img-area ul .img-list a img {
+  width: 271px;
+  height: 100px;
+}
+
+#container #covid19-img-area ul .img-list + .img-list {
+  margin-left: 5px;
+}
+
+#container #covid19-img-area ul .img-list + .img-list + .img-list {
+  width: 130px;
+}
+
+#container #covid19-img-area ul .img-list + .img-list + .img-list a img {
+  width: 130px;
+}
+
+#container #covid19-action {
+  background: #f8f8f8;
+  font-size: 0;
+}
+
+#container #covid19-action .action-title {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 20px;
+  padding-top: 40px;
+}
+
+#container #covid19-action .action-icon .icon-list {
+  display: inline-block;
+  font-size: 10px;
+  width: calc(14.28% - (70px / 7));
+  text-align: center;
+}
+
+#container #covid19-action .action-icon .icon-list div img {
+  border-radius: 40px;
+}
+
+#container #covid19-action .action-icon .icon-list dl {
+  margin-top: 15px;
+}
+
+#container #covid19-action .action-icon .icon-list + .icon-list {
+  margin-left: 10px;
+}
+
+#container #covid19-action .action-tel {
+  margin-top: 35px;
+}
+
+#container #covid19-action .action-tel .tel {
+  display: inline-block;
+  width: calc(33.33% - (40px / 3));
+  height: 210px;
+  min-height: 150px;
+  font-size: 20px;
+  vertical-align: top;
+  overflow: hidden;
+  margin-left: 10px;
+}
+
+#container #covid19-action .action-tel .tel a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#container #covid19-action .action-tel .tel + .tel {
+  margin-left: 10px;
+}
+
+#container #covid19-action .action-tel .tel .red-blue {
+  background: #da6d56;
+  border: solid #da6d56;
+  border-radius: 10px;
+  color: #ffffff;
+  height: 210px;
+  padding: 10px;
+}
+
+#container #covid19-action .action-tel .tel .red-blue span {
+  color: #ecc8ad;
+}
+
+#container #covid19-action .action-tel .tel .red-blue dt {
+  padding: 15px 0 20px 0;
+}
+
+#container #covid19-action .action-tel .tel .red-blue dt span {
+  font-size: 5px;
+  padding-left: 140px;
+}
+
+#container #covid19-action .action-tel .tel .red-blue dd + dd + dd {
+  margin-top: 20px;
+}
+
+#container #covid19-action .action-tel .tel .red-blue dd {
+  padding-top: 10px;
+}
+
+#container #covid19-action .action-tel .tel .blue {
+  background: #4699ad;
+  border: solid #4699ad;
+}
+
+#container #covid19-action .action-tel .tel .tel-list {
+  height: calc(33.33% - (10px / 3));
+  text-align: center;
+  font-size: 0;
+}
+
+#container #covid19-action .action-tel .tel .tel-list .margin {
+  margin-left: 27px;
+}
+
+#container #covid19-action .action-tel .tel .tel-list + .tel-list {
+  margin-top: 10px;
+}
+
+#container #covid19-action .action-tel .tel .block .tel-list-block {
+  display: inline-block;
+  border: solid black;
+  border-radius: 10px;
+  padding: 5px 25px 10px 15px;
+  font-size: 20px;
+}
+
+#container #covid19-action .action-tel .tel .block .tel-list-block .padding {
+  padding: 0 25px;
+}
+
+#container #covid19-action .action-tel .tel .block .tel-list-block .padding dd a {
+  color: black;
+}
+
+#container #covid19-action .action-tel .tel .block .tel-list-block .padding2 {
+  padding: 9px 68px 0px 68px;
+}
+
+#container #covid19-action .action-tel .tel .block .tel-list-block .padding2 dt a {
+  color: black;
+}
+
+#container #covid19-action .action-tel .tel .block .tel-list-block dl dt + dd {
+  padding-top: 6px;
+}
+
+#container #covid19-service {
+  font-size: 0;
+}
+
+#container #covid19-service .service {
+  display: inline-block;
+  width: calc(33.33% - (15px / 3));
+  font-size: 20px;
+  text-align: center;
+  padding: 90px 0 0 10px;
+}
+
+#container #covid19-service .service .service-title {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+#container #covid19-service .service .service-tit-img img {
+  width: 440px;
+  height: 450px;
+}
+
+#container #covid19-service .service .service-block {
+  text-align: left;
+}
+
+#container #covid19-service .service .service-block div img {
+  width: 440px;
+  height: 450px;
+}
+
+#container #covid19-service .service .service-block dt {
+  font-size: 15px;
+  color: #da6d56;
+}
+
+#container #covid19-service .service + .service {
+  margin-left: 5px;
+}
+/*# sourceMappingURL=style.css.map */

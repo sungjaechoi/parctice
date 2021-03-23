@@ -1,0 +1,142 @@
+body {
+  width: 1500px;
+  margin: 0 auto;
+
+  #longo-area {
+    height: 50px;
+    .header-wrap {
+      height: 50px;
+      font-size: 0;
+      text-align: center;
+
+      .meun-longo-area {
+        font-size: 0;
+        display: inline-block;
+        vertical-align: top;
+
+        .meun {
+          display: inline-block;
+          vertical-align: top;
+          margin-right: 2px;
+          img {
+            width: 45px;
+            height: 45px;
+          }
+        }
+        .longo {
+          display: inline-block;
+
+          img {
+            vertical-align: top;
+            width: 110px;
+            height: 45px;
+          }
+        }
+      }
+
+      .search {
+        display: inline-block;
+        text-align: center;
+        margin: 0px 220px;
+
+        form {
+          fieldset {
+            font-size: 0;
+            input {
+              vertical-align: top;
+            }
+            .search-area {
+              width: 640px;
+              height: 25px;
+            }
+
+            .search-button {
+              background: url(/img/header-2.png) no-repeat center;
+              border: none;
+              width: 32px;
+              height: 32px;
+              cursor: pointer;
+              margin: 0 0px;
+            }
+            .voice-button {
+              background: url(/img/header-3.png) no-repeat center;
+              border: none;
+              width: 32px;
+              height: 32px;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+      .header-icon {
+        text-align: left;
+        display: inline-block;
+        font-size: 0;
+        a {
+          display: inline-block;
+          img {
+            width: 45px;
+            height: 45px;
+          }
+        }
+      }
+    }
+  }
+  #article {
+    font-size: 0;
+    #aside {
+      width: 230px;
+      height: 880px;
+      border: solid red;
+      display: inline-block;
+      vertical-align: top;
+      nav {
+        font-size: 16px;
+        h3 {
+          font-weight: bold;
+          font-size: 20px;
+        }
+        & > ul {
+          border-top: 1px solid black;
+          & > li {
+            & > a {
+              display: block;
+
+              padding: 12px 6px;
+
+              & > .icon-area {
+                display: inline-block;
+                width: 16px;
+                height: 16px;
+                background-color: red;
+                vertical-align: middle;
+                &.home {
+                  background: url(/img/section-10.png);
+                }
+                &.min {
+                  background: url(/img/section-2.png);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    #conteiner {
+      width: 1270px;
+      height: 880px;
+      border: solid red;
+      display: inline-block;
+      vertical-align: top;
+
+      .image {
+        font-size: 0;
+        .image-list {
+          display: inline-block;
+          font-size: 18px;
+          margin: 0 5px;
+        }
+      }
+    }
+  }
+}

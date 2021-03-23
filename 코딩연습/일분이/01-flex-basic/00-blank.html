@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS Flex</title>
+    <link rel="stylesheet" href="default.css" />
+	<style>
+		.flex-container {
+			display: flex;
+        	/* display: inline-flex; */
+		
+			/* flex-direction: row; ->기본속성*/
+        	/* flex-direction: row-reverse; */
+        	/* flex-direction: column; */
+        	/* flex-direction: column-reverse; */
+		
+			/* flex-wrap: nowrap;->기본속성 */
+			/* flex-wrap: wrap; */
+			/* flex-wrap: wrap-reverse; */
+			
+			/* 메인축 <-----   -----> */
+			/* justify-content: flex-start; ->기본속성 */
+			/* justify-content: flex-end */
+			/* justify-content: center; */
+			/* justify-content: space-between; */
+			/* justify-content: space-around; */
+			
+			/* height: 300px; -> "수직측" 공간값이 필요 */
+			/* align-items: stretch; */
+			/* align-items: flex-start; */
+			/* align-items: flex-end; */
+			/* align-items: center; */
+			/* align-items: baseline; */
+	
+		}
+		.flex-item {
+			/* flex-grow: 0; */
+			/* flex-shrink: 1; */
+			/* flex-basis: auto; */
+		    /* 축약순서: "grow" -> "shrink"->"basis" */
+			 /* flex: 1 1 auto;--> 기본형 */
+			 /* margin */
+			 /*  
+			 //최대 0~200px
+			 max-width: 200px;
+			 //최소20%
+			 min-width: 20%;
+			 */
+		}
+
+		
+	</style>
+  </head>
+  <body>
+	<div class="flex-container">
+		<div class="flex-item">AAAAAAAAAAAA</div>
+		<div class="flex-item">BBB</div>
+		<div class="flex-item">CCCCCCC</div>
+  </body>
+</html>

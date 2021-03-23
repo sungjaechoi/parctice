@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style></style>
+  </head>
+  <body>
+    <form action="#">
+      <fieldset>
+        <legend>test</legend>
+        <label for="test">test</label>
+        <input type="text" id="test" />
+      </fieldset>
+      <button>버튼</button>
+    </form>
+    <ul>
+      <li>aaa</li>
+    </ul>
+    <script>
+      const inputText = document.querySelector("#test");
+      const list = document.querySelector("ul");
+      const btn = document.querySelector("button");
+
+      const log = (text) => {
+        console.log(text);
+      };
+
+      log(list);
+      let inputTextValue;
+
+      inputText.addEventListener("input", (e) => {
+        log(e);
+        inputTextValue = e.target.value;
+      });
+
+      btn.addEventListener("click", () => {
+        const listItem = document.createElement("li");
+        listItem.innerText = inputTextValue;
+        list.append(listItem);
+        inputText.value = "";
+      });
+      // ------------------------------------------------------------
+      const ul = document.querySelector("ul"); //있는거 잡아옴
+      const button = document.querySelector("button"); //있는거 잡아옴
+      let on = document.querySelector(".on");
+      button.addEventListener("click", () => {
+        ul.classList.toggle("on");
+      }); //잡아온놈을 누르면 먼가 하겠다.
+      // --------------------------------------------------------------------
+
+      const f1 = () => {
+        return 2;
+      };
+      const f2 = () => {
+        return 3;
+      };
+      const addMaker = (f1, f2) => {
+        const f1Value = f1();
+        const f2Value = f2();
+        let result;
+        console.log(f1Value);
+        console.log(f2Value);
+        result = f1Value + f2Value; //5
+        console.log(result);
+        return result;
+      };
+      // const result = a(f1, f2);
+
+      // ----------------------------------------
+
+      // for (let i = 0; i < g.length; i++) {
+      //   // console.log("어떤 아줌마가" + people[i] + "에게 사탕을 주었습니다.");
+      //   //`쓰고싶은 글자 ${변수명}`
+      //   if (g[i].작성자닉 == "민혁") {
+      //     console.log(`${g[i].제목} 작성자 : ${g[i].작성자닉}`);
+      //   }
+      // }
+    </script>
+  </body>
+</html>

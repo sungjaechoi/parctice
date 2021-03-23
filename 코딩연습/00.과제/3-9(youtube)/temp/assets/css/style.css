@@ -1,0 +1,298 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.sr-only {
+  display: block;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+
+body {
+  width: 1500px;
+  margin: 0 auto;
+}
+
+body #longo-area {
+  height: 50px;
+}
+
+body #longo-area .header-wrap {
+  height: 50px;
+  font-size: 0;
+  text-align: center;
+}
+
+body #longo-area .header-wrap .meun-longo-area {
+  font-size: 0;
+  display: inline-block;
+  vertical-align: top;
+}
+
+body #longo-area .header-wrap .meun-longo-area .meun {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 2px;
+}
+
+body #longo-area .header-wrap .meun-longo-area .meun img {
+  width: 45px;
+  height: 45px;
+}
+
+body #longo-area .header-wrap .meun-longo-area .longo {
+  display: inline-block;
+}
+
+body #longo-area .header-wrap .meun-longo-area .longo img {
+  vertical-align: top;
+  width: 110px;
+  height: 45px;
+}
+
+body #longo-area .header-wrap .search {
+  display: inline-block;
+  text-align: center;
+  margin: 0px 220px;
+}
+
+body #longo-area .header-wrap .search form fieldset {
+  font-size: 0;
+}
+
+body #longo-area .header-wrap .search form fieldset input {
+  vertical-align: top;
+}
+
+body #longo-area .header-wrap .search form fieldset .search-area {
+  width: 640px;
+  height: 25px;
+}
+
+body #longo-area .header-wrap .search form fieldset .search-button {
+  background: url(/img/header-2.png) no-repeat center;
+  border: none;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  margin: 0 0px;
+}
+
+body #longo-area .header-wrap .search form fieldset .voice-button {
+  background: url(/img/header-3.png) no-repeat center;
+  border: none;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+body #longo-area .header-wrap .header-icon {
+  text-align: left;
+  display: inline-block;
+  font-size: 0;
+}
+
+body #longo-area .header-wrap .header-icon a {
+  display: inline-block;
+}
+
+body #longo-area .header-wrap .header-icon a img {
+  width: 45px;
+  height: 45px;
+}
+
+body #article {
+  font-size: 0;
+}
+
+body #article #aside {
+  width: 230px;
+  height: 880px;
+  border: solid red;
+  display: inline-block;
+  vertical-align: top;
+}
+
+body #article #aside nav {
+  font-size: 16px;
+}
+
+body #article #aside nav h3 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+body #article #aside nav > ul {
+  border-top: 1px solid black;
+}
+
+body #article #aside nav > ul > li > a {
+  display: block;
+  padding: 12px 6px;
+}
+
+body #article #aside nav > ul > li > a > .icon-area {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-color: red;
+  vertical-align: middle;
+}
+
+body #article #aside nav > ul > li > a > .icon-area.home {
+  background: url(/img/section-10.png);
+}
+
+body #article #aside nav > ul > li > a > .icon-area.min {
+  background: url(/img/section-2.png);
+}
+
+body #article #conteiner {
+  width: 1270px;
+  height: 880px;
+  border: solid red;
+  display: inline-block;
+  vertical-align: top;
+}
+
+body #article #conteiner .image {
+  font-size: 0;
+}
+
+body #article #conteiner .image .image-list {
+  display: inline-block;
+  font-size: 18px;
+  margin: 0 5px;
+}
+/*# sourceMappingURL=style.css.map */

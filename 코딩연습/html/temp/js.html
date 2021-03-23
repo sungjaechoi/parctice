@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .on {
+        display: block;
+        height: 200px;
+        background: pink;
+        transition: 0.5s;
+      }
+    </style>
+  </head>
+  <body>
+    최성재라는 이름을 활용할거야. 프로그래밍에서 쓰이는 그릇. 변수를 선언한다.
+    변수로 지정한다. 변수로 할당한다. 1. const 변수를 한번 담으면 변경이 안댐
+    ㅎㅎ 2. let 변수를 한번 담고, 내용을 변경할 수 있음 const name = '최성재'
+    변수를 선언할거에요.(const) 변수명은 이거에요.(name) 변수에 담을 값은
+    이거에요 (='최성재') 1. 어 변수를 만들어야겠다. 2. 음.. 내이름을 담을거니까.
+    변수명은 name으로 할까? 3. const name = '최성재' 변수에 담을 수 있는 값
+    1."문자열"
+    <div class="test-target">조민혁</div>
+    <button>나이 올리기</button>
+    <script>
+      let name = "조민혁";
+      let age = 30;
+      let createDiv = document.createElement("div");
+      let body = document.querySelector("body");
+      createDiv.innerText = "덜덜덜";
+      console.log(createDiv);
+
+      //값이 있다. 조민혁임. name 변경가능한 변수
+
+      function sayName() {
+        if (name == "조민혁") {
+          //만약에 ()괄호안에 있는 내용이 참이라면, 있으면, {}콧수염 안에 코드를 실행할거야.
+          console.log(`이름이 ${name} 이시네요. 나이는 ${age}입니다.`);
+        }
+        if (name == "최성재") {
+          console.log(`이름이 ${name}  이시네요`);
+        }
+      }
+
+      let button = document.querySelector("button");
+      let testTarget = document.querySelector(".test-target");
+      testTarget.style.color = "black";
+      console.log(testTarget);
+      console.log(button);
+
+      button.addEventListener("click", () => {
+        if (testTarget.innerText == "조민혁") {
+          testTarget.innerText = "최성재";
+          testTarget.classList.add("on");
+          body.append(createDiv);
+          return;
+        }
+        if (testTarget.innerText == "최성재") {
+          testTarget.innerText = "조민혁";
+          testTarget.classList.remove("on");
+          return;
+        }
+        // if (testTarget.style.color == "black") {
+        //   testTarget.style.color = "red";
+        //   return;
+        // }
+        // if (testTarget.style.color == "red") {
+        //   testTarget.style.color = "black";
+        //   return;
+        // }
+      });
+      //   sayName();
+    </script>
+  </body>
+</html>

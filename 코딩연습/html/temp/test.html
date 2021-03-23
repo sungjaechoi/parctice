@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- link rel : css 파일과 HTML 파일 연결 -->
+    <!-- 내가 link를 할거야. 뭐를? stylesheet를 / href 이거 어디에 있으니까. "탁자위에 그거 나무 줘라" -->
+    <!-- ./ : html 파일이 있는 기준 -->
+    <link rel="stylesheet" href="./sss/ss/style.css" />
+    <style>
+      body {
+        background: pink;
+      }
+      html body {
+        background: rebeccapurple;
+      }
+
+      a {
+        color: blueviolet;
+        background: white;
+        display: flex;
+        height: 30px;
+        width: 400px;
+        border: 10px solid brown;
+        text-decoration: none;
+        align-items: center;
+        justify-content: center;
+      }
+      html body .pink-box .pink-line {
+        border: 10px solid pink;
+        background: honeydew;
+      }
+      .another .pink-line {
+        border: red;
+      }
+      #green-man {
+        border: 10px solid green;
+      }
+
+      .logo {
+        width: 160px;
+        height: 80px;
+        background: chartreuse;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+      .test-area-title {
+        border-left: 4px solid red;
+        border-right: 4px solid red;
+        /* border top / left / right / bottom */
+      }
+
+      /* 
+	div div div {}
+
+	div.wrapper div {}
+	div가wrapper인데 그 안에 div 
+
+
+	div.wrapper
+	<div clas="wapper">
+	
+	</div>
+
+	
+	*/
+    </style>
+
+    1. 95점 이거 2. 80 점 이거 3. 34 점 이거 4. 10 점 이거
+  </head>
+  <body>
+    <h1 class="logo">
+      앞으로 연습 및 작업시 temp폴더 통으로 복사 붙여넣기 후, 이름 변경 하여
+      재사용
+    </h1>
+    <h2 class="test-area-title">title2</h2>
+    <ul class="another pink-box">
+      <li class="pink-line" id="green-man">
+        <a href="https://www.naver.com">네이버1</a>
+        <!-- 앵커 라는 뜻을 가짐 : 누르면 어디로 이동(웹사이트 이동) -->
+      </li>
+      <li class="pink-line">
+        <a href="https://www.naver.com">네이버2</a>
+        <!-- 앵커 라는 뜻을 가짐 : 누르면 어디로 이동(웹사이트 이동) -->
+      </li>
+      <li class="pink-line">
+        <a href="https://www.naver.com">네이버3</a>
+        <!-- 앵커 라는 뜻을 가짐 : 누르면 어디로 이동(웹사이트 이동) -->
+      </li>
+      <li class="pink-line">
+        <a href="https://www.naver.com">네이버4</a>
+        <!-- 앵커 라는 뜻을 가짐 : 누르면 어디로 이동(웹사이트 이동) -->
+      </li>
+      <li class="pink-line">
+        <a href="https://www.naver.com">네이버5</a>
+        <!-- 앵커 라는 뜻을 가짐 : 누르면 어디로 이동(웹사이트 이동) -->
+      </li>
+    </ul>
+    div>ul>li>dl>dt+dd*5
+    <!-- class / id 태그를 특정하기 위한 속성
+	class = 반복 / 재사용
+	id = 단 하나.
+	-->
+  </body>
+</html>

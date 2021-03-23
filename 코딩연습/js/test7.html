@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   const sum = (f, number) => {
+      //     console.log(f);
+      //     console.log(number);
+      //     const fValue = f();
+      //   };
+
+      //   sum("aa", 1);
+      const aa = "aa"; //변경안됨
+      console.log(aa);
+      let bb; //변경안됨
+      console.log(bb);
+      bb = "bb";
+      console.log(bb);
+
+      const f1 = () => {
+        return 2;
+      };
+      console.log(f1());
+      const f2 = () => {
+        return 3;
+      };
+      console.log(f2());
+
+      const addMaker = (funtion1, funtion2) => {
+        const f1Value = funtion1();
+        const f2Value = funtion2();
+        let result;
+        console.log(f1Value);
+        console.log(f2Value);
+        result = f1Value + f2Value; //5
+        console.log(result); //5
+        return result; //5
+      };
+      const result = addMaker(f1, f2); //5
+      console.log(result);
+    </script>
+  </body>
+</html>

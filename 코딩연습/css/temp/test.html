@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>>인라인블럭 레이아웃 연습</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <style>
+    .wrapper {
+      background: gray;
+      height: 400px;
+    }
+    .aa {
+      /* font-size: 0px; */
+      text-align: center;
+      display: inline-block;
+    }
+
+    .a {
+      width: 50px;
+      height: 50px;
+      display: inline-block;
+      background-color: red;
+      vertical-align: middle;
+      line-height: 50px;
+      text-align: center;
+      font-size: 14px;
+    }
+    .a + .a {
+      margin-left: 2px;
+    }
+  </style>
+  <body>
+    <!-- 
+		각 li를 50 x 50 사이즈, 10PX의 여백을 두고 정렬 시키자. (인라인블럭)
+	 -->
+    <div class="wrapper">
+      <ul class="aa">
+        <li class="a">1</li>
+        <li class="a">2</li>
+        <li class="a">3</li>
+        <li class="a">4</li>
+        <li class="a">5</li>
+        <li class="a">6</li>
+        <li class="a">7</li>
+        <li class="a">8</li>
+      </ul>
+    </div>
+  </body>
+</html>

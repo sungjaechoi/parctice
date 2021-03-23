@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //for loop
+      //   const people = ["민혁", "성재", "츠키", "태완", "버즈", "벼멸구"];
+      const g = [
+        {
+          제목: "1글제목입니다",
+          글번호: 1,
+          작성자닉: "츠키",
+          추천수: 0,
+        },
+        {
+          제목: "2글제목입니다",
+          글번호: 1,
+          작성자닉: "성재",
+          추천수: 0,
+        },
+        {
+          제목: "3글제목입니다",
+          글번호: 1,
+          작성자닉: "민혁",
+          추천수: 0,
+        },
+        {
+          제목: "4글제목입니다",
+          글번호: 1,
+          작성자닉: "바키",
+          추천수: 0,
+        },
+      ];
+
+      for (let i = 0; i < g.length; i++) {
+        // console.log("어떤 아줌마가" + people[i] + "에게 사탕을 주었습니다.");
+        //`쓰고싶은 글자 ${변수명}`
+        if (g[i].작성자닉 == "민혁") {
+          console.log(`${g[i].제목} 작성자 : ${g[i].작성자닉}`);
+        }
+      }
+
+      //   console.log("민혁에게 사탕을 주었습니다.");
+      //   console.log("성재에게 사탕을 주었습니다.");
+      //   console.log("츠키에게 사탕을 주었습니다.");
+    </script>
+  </body>
+</html>

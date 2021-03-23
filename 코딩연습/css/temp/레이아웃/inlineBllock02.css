@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #999;
+  width: 1000px;
+  margin: 0 auto;
+}
+/* header */
+#header {
+  background: #4444;
+  width: 1000px;
+}
+.long-area {
+  display: inline-block;
+}
+.header-nav {
+  display: inline-block;
+}
+.header-nav ul {
+  padding: 0 0;
+  margin: 0 0;
+  font-size: 0;
+}
+
+.header-nav li {
+  display: inline-block;
+  margin-left: 80px;
+  font-size: 16px;
+}
+/* section 1*/
+.content1 {
+  background: royalblue;
+  width: 1000px;
+  height: 300px;
+}
+
+/* section 2 */
+.content2 {
+}
+.content2 ul {
+  margin: 50px 0px;
+  padding: 0px 0px;
+  position: relative;
+}
+
+.content2 ul li {
+  list-style: none;
+  font-size: 0;
+}
+
+.content2 ul li + li {
+  margin-top: 20px;
+}
+
+.content2 ul li div {
+  background: skyblue;
+  display: inline-block;
+  width: 270px;
+  height: 200px;
+  vertical-align: top;
+}
+.content2 ul li dl {
+  display: inline-block;
+  vertical-align: top;
+  border: 4px solid darkblue;
+  height: 200px;
+  padding: 20px;
+  width: calc(100% - 270px);
+}
+
+.content2 ul li dl dt {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.content2 ul li dl dt + dd {
+  margin-top: 24px;
+}
+
+.content2 ul li dl dd {
+  /* display: inline-block;
+  position: absolute;
+  margin-top: 20px; */
+  background: url();
+}
+.content2 ul li dl dd + dd {
+  /* display: inline-block;
+  position: absolute;
+  margin-top: 80px; */
+}
+.content2 ul li dl dd + dd + dd {
+  /* display: inline-block;
+  position: absolute;
+  margin-top: 150px; */
+}

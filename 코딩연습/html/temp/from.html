@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form태그</title>
+  </head>
+  <body>
+    <form action="#">
+      <fieldset>
+        <legend>회원정보입력</legend>
+        <div>
+          <strong>이름</strong>
+          <label for="myName">이름:</label><input type="text" id="myName" />
+        </div>
+        <div>
+          <strong>성별</strong>
+          <label for="gender-m">남자</label>
+          <input type="radio" name="gender" id="gender-m" />
+
+          <label for="gender-f">여자</label>
+          <input type="radio" name="gender" id="gender-f" />
+        </div>
+        <div>
+          <strong>취미</strong>
+          <label for="">축구</label>
+          <input type="checkbox" name="habit" id="habit-c" />
+          <label for="">농구</label>
+          <input type="checkbox" name="habit" id="habit-n" />
+          <label for="">배구</label>
+          <input type="checkbox" name="habit" id="habit-b" />
+          <label for="">탁구</label>
+          <input type="checkbox" name="habit" id="habit-t" />
+        </div>
+        <div>
+          <label for="yyyy">생년월일</label>
+          <select name="" id="yyyy">
+            <option value="">년도선택</option>
+            <option value="">아주잘생김</option>
+            <option value="">잘생김</option>
+            <option value="">못생김</option>
+            <option value="">아주못생김</option>
+          </select>
+          <select name="" id="mm">
+            <option value="">월선택</option>
+            <option value="">아주잘생김</option>
+            <option value="">잘생김</option>
+            <option value="">못생김</option>
+            <option value="">아주못생김</option>
+          </select>
+          <select name="" id="dd">
+            <option value="">일선택</option>
+            <option value="">아주잘생김</option>
+            <option value="">잘생김</option>
+            <option value="">못생김</option>
+            <option value="">아주못생김</option>
+          </select>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>

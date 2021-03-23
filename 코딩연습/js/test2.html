@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      ul > li {
+        height: 200px;
+        width: 20%;
+        float: left;
+        background: blue;
+      }
+      ul > li:nth-child(even) {
+        background: red;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+    </ul>
+    <script>
+      // camelCase 낙타 등같이 생겼다고함
+
+      //   let firstLi = document.querySelector("ul>li:nth-child(1)");
+      //   console.log(firstLi);
+      //   firstLi = document.querySelector("ul>li:nth-child(2)");
+      //   console.log(firstLi);
+      //   let secondLi=0;
+      //거짓으로 치는 놈들 : 0 / undefined / null / false
+      //참으로 치는 애들 : 1 / 값이 있음 /
+      //값이비어있음? 펄스요~~
+      // 값만있네? 있으니까 참이네!
+
+      // 이프문
+      // let firstLi;
+      // console.log(firstLi);
+
+      // firstLi = 3;
+      // if (firstLi == 1) {
+      //   console.log("firstLi의 값은 1입니다.");
+      // }
+      // if (firstLi == 2) {
+      //   console.log("firstLi의 값은 2입니다.");
+      // }
+      // if (firstLi == 3) {
+      //   console.log("firstLi의 값은 3입니다.");
+      // }
+
+      let firstLi;
+      console.log(firstLi);
+      firstLi = "거북이";
+
+      switch (firstLi) {
+        case "두루미":
+          console.log("값이 '두루미'입니다.");
+          break;
+        case "거북이":
+          console.log("값이 '거북이'입니다.");
+          break;
+        case "뱀":
+          console.log("값이 '뱀'입니다.");
+          break;
+        default:
+          console.log("값 똑바로좀 ;;");
+          break;
+      }
+    </script>
+  </body>
+</html>
