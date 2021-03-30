@@ -1,0 +1,28 @@
+@mixin font-lg {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+@mixin bg($imgName, $r: no-repeat, $p: center, $s: auto) {
+  background-image: url(/img/#{$imgName});
+  background-repeat: $r;
+  background-position: $p;
+  background-size: $s;
+}
+
+@mixin ir {
+  display: block;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+
+//i = item
+//m = margin
+@mixin divide($i, $m) {
+  width: calc(100% / #{$item} - (#{$margin}/#{$item}));
+}
+
+@function test($a) {
+}
