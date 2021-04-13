@@ -131,7 +131,65 @@ table {
   border-spacing: 0;
 }
 
+.sr-only {
+  display: block;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+
+.m-olny {
+  display: none;
+}
+
+@media (min-width: 0) and (max-width: 757px) {
+  .m-olny {
+    display: block;
+  }
+}
+
+.m-t {
+  display: none;
+}
+
+@media (min-width: 0) and (max-width: 1023px) {
+  .m-t {
+    display: block;
+  }
+}
+
+.t-only {
+  display: none;
+}
+
+@media (min-width: 758px) and (max-width: 1023px) {
+  .t-only {
+    display: block;
+  }
+}
+
+.t-pc {
+  display: none;
+}
+
+@media (min-width: 758px) and (max-width: 1023px) {
+  .t-pc {
+    display: block;
+  }
+}
+
+.pc-only {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .pc-only {
+    display: block;
+  }
+}
+
 body {
-  background: red;
+  background: darkblue;
 }
 /*# sourceMappingURL=style.css.map */
