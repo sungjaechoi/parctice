@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+      const arr2 = [11, 12, 13, 14, 15];
+      const allEl = document.querySelectorAll("*");
+      // const isEven = function (value) {
+      //   return value % 2 === 0;
+      // };
+      // ---> 아래는 안되고 위는 되는 이유?
+
+      const isEven = (el) => {
+        console.log(el);
+        return el.nodeName === "SCRIPT";
+      };
+      // //   const arr3 = arr1.concat(arr2);
+      //   arr.slice(3, 4);--> 확인 안됨
+      //   arr.splice(0, 2, "추가");
+      //   arr.shift();
+      //   arr.unshift(0);
+      //   arr.pop();
+      //   arr.push(10);
+
+      // console.log([...allEl].some(isEven));
+
+      arr2.reduce((acc, current) => {
+        return acc + current;
+      });
+      console.log(
+        arr2.reduce((acc, current) => {
+          return acc + current;
+        })
+      );
+
+      const testArr = [
+        {
+          name: "tom1",
+          price: "10000원",
+          ea: 22,
+        },
+        {
+          name: "tom2",
+          price: "20000원",
+          ea: 666,
+        },
+        {
+          name: "tom3",
+          price: "100000원",
+          ea: 5,
+        },
+        {
+          name: "tom4",
+          price: "300000원",
+          ea: 6,
+        },
+        {
+          name: "tom5",
+          price: "200000원",
+          ea: 100,
+        },
+        
+      ];
+
+      const filterTestArr = testArr.filter((item) => {
+        if (item.name == "tom1") {
+          return item;
+        }
+        if (item.name == "tom2") {
+          return item;
+        }
+      });
+
+      const mapTest = filterTestArr.map((item) => {
+        console.log(item);
+        return item.price * item.ea;
+      });
+
+      console.log(mapTest);
+
+      const sumPrice =
+        mapTest.reduce((acc, item) => {
+          console.log(acc);
+          return acc + item;
+        }, 0) + "원";
+
+      console.log(filterTestArr);
+      console.log(sumPrice);
+
+      //Dom 
+    </script>
+  </body>
+</html>

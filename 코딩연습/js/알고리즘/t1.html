@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   function solution() {
+      //     let result = arguments[0];
+      let array = [...arguments];
+
+      //     for (let i = 0; i < arguments.length; i++) {
+      //       if (result > arguments[i]) {
+      //         result = arguments[i];
+      //       }
+      //       console.log(`${arguments[i]} ${result}`);
+      //     }
+      //   }
+
+      //   function selectOdd() {
+      //     let result = [];
+
+      //     for (let i = 0; i < arguments.length; i++) {
+      //       console.log(arguments[i]);
+      //       if (arguments[i] % 2 == 0) {
+      //         result.push(arguments[i]);
+      //       }
+      //     }
+      //     return result;
+      //   }
+
+      //   const f1 = (a) => a + a;
+
+      //   console.log(f1(5));
+      const AbsElement = (array) => array.map((n) => n / 2);
+      const selectOdd = (array) => array.filter((n) => n % 2 === 0);
+      const SumElement = (array) => array.reduce((ac, c) => ac + c);
+      //   const solution = (a, b, c) => {
+      //     let result = a;
+      //     if (result > b) {
+      //       result = b;
+      //     } else if (result > c) {
+      //       result = c;
+      //     }
+      //     return result;
+      //   };
+      let test = [10, 11, 2, 1101, 402, 501, 600];
+      console.log(test);
+      console.log(...test);
+      console.log(Math.min(1, 2, 4, 6, 100, 500, 101));
+      console.log(selectOdd([10, 11, 2, 1101, 402, 501, 600]));
+      console.log(AbsElement([10, 11, 2, 1101, 402, 501, 600]));
+    </script>
+  </body>
+</html>

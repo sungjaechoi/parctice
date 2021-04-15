@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .list-item {
+      display: flex;
+      border: 1px solid springgreen;
+    }
+    .text-area {
+      display: flex;
+      margin-right: 20px;
+    }
+    .text-area span {
+      padding: 14px 4px;
+      margin-right: 20px;
+    }
+    .button-area button {
+      padding: 14px 4px;
+    }
+  </style>
+  <body>
+    <input type="text" id="title-input" /><button
+      type="button"
+      id="list-add-button"
+    >
+      추가
+    </button>
+    <ul class="number-list">
+      <li class="list-item">
+        <div class="text-area">
+          <span>1</span>
+          <p>타이틀 입니다.</p>
+        </div>
+        <div class="button-area"><button>삭제</button></div>
+      </li>
+    </ul>
+    <script>
+      //인풋창에 텍스트를 입력한다.
+      //추가 버튼이 있다.
+      //추가 버튼을 클릭 할 경우 리스트가 추가된다.
+      //추가될 시 제목영역의 문자열은 인풋창에서 입력한 텍스트가 반영된다.
+      const titleInput = document.querySelector("#title-input");
+      const listAddButton = document.querySelector("#list-add-button");
+      const numberList = document.querySelector(".number-list");
+      let currentInputValue; //aaa
+      titleInput.addEventListener("keyup", (k) => {
+        console.log("확인");
+        currentInputValue = k.target.value;
+        console.log(currentInputValue);
+        console.log(k);
+      });
+      listAddButton.addEventListener("click", () => {
+        let number = numberList.querySelectorAll(".list-item").length + 1;
+        console.log(number);
+        let liEl = document.createElement("li");
+        liEl.classList.add("list-item");
+        console.log(liEl.classList);
+        console.log(liEl.classList[0]);
+        liEl.innerHTML = `<div class="text-area">
+          <span>${number}</span>
+          <p>${currentInputValue}</p>
+        </div>
+        <div class="button-area"><button>삭제</button></div>`;
+        numberList.append(liEl);
+      });
+      //   const textArea  = document.querySelector(".text-area")
+    </script>
+  </body>
+</html>

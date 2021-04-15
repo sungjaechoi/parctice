@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1>aa</h1>
+    <p>p</p>
+    <span>aaaaaaaaaaaaaaaaaaaaaaaaaaaaa</span>
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+    </ul>
+    <script>
+      console.log(test);
+      //   let state = false; //false꺼진거 trur 켜진거
+
+      //   () => {
+      //     state ? state=false : state=true;
+      //        스테이트가 참이라면 ? false를 할당, 아니면 true를 할당
+      //   };
+
+      const log = (...content) => {
+        console.log(...content);
+      };
+
+      const qs = (el) => {
+        const legnth = document.querySelectorAll(el).length; //0 이든 뭐든.
+
+        if (legnth === 0) {
+          return undefined;
+        }
+
+        if (legnth === 1) {
+          return document.querySelector(el);
+        } else {
+          return document.querySelectorAll(el);
+        }
+
+        switch (legnth) {
+          case 0:
+            return undefined;
+            break;
+
+          case 1:
+            return document.querySelector(el);
+            break;
+
+          default:
+            return document.querySelectorAll(el);
+            break;
+        }
+      };
+
+      const ftitle = qs("ul");
+      ftitle.addEventListener("click", () => {
+        console.log("aa");
+      });
+
+      const ev = (obj) => {
+        const el = obj.el;
+        const action = obj.action ? obj.action : "click";
+        const f = obj.f;
+        console.log(el);
+        console.log(action);
+        console.log(f);
+        el.addEventListener(action, f);
+      };
+
+      ev({
+        el: ftitle,
+        f: () => {
+          log("새로만든놈");
+        },
+      });
+
+      
+      log(ftitle);
+    </script>
+  </body>
+</html>

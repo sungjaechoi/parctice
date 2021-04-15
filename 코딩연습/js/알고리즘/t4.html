@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <input type="text" class="input" />
+      <button type="button" class="btn">확인</button>
+      <ul class="list">
+        <li class="item">
+          <span class="span">1</span>
+          <p class="p">제목</p>
+        </li>
+      </ul>
+    </div>
+    <script>
+      const input = document.querySelector(".input");
+      const btn = document.querySelector(".btn");
+      const list = document.querySelector(".list");
+
+      let currentInputValue;
+      input.addEventListener("keyup", (e) => {
+        currentInputValue = e.target.value;
+        console.log(e);
+      });
+
+      btn.addEventListener("click", (e) => {
+        let createLi = document.createElement("li");
+        let createspan = document.createElement("span");
+        let createP = document.createElement("p");
+
+        let currentNumber = document.querySelectorAll(".list>li").length + 1;
+
+        console.log(currentNumber);
+        createspan.classList.add("span");
+        createLi.classList.add("item");
+        createP.classList.add("p");
+        createspan.innerText = currentNumber;
+        createP.innerText = currentInputValue;
+
+        if (currentInputValue) {
+          createLi.append(createspan);
+          createLi.append(createP);
+          list.append(createLi);
+        }
+
+        console.log(e.target);
+        let t = e.target;
+        t.style.background = "red";
+        t.style.padding = "12px 20px";
+        input.value = "";
+        currentInputValue = "";
+      });
+    </script>
+  </body>
+</html>

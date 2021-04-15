@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const user1 = [{ v: 1 }, { v: 2 }, { v: 3 }]; // 베열에 객체가있구나
+      const user2 = [[1], [2], [3], [4]]; // 베열에 배열이있구나
+      const user3 = ["문자열", "문자열"]; // 베열에 문자열이있구나
+      const user4 = [4, 3, 1, 7]; // 베열에 숫자가있구나
+
+      //   let res = user4[0]; //1
+      //   for (let i = 0; i < user4; i++) {
+      //     if (res > user4[2]) {
+      //       res = user4[i];
+      //     }
+      //   }
+
+      const result = user1.filter((user) => {
+        return user.name == inputName;
+      });
+
+      console.log(result);
+
+      console.log(user1);
+      console.log("-----------------------------------");
+      user1.push(1); // 더 넣는거
+      user1.pop(); // 하나씩 맨 뒤에서부터 뺴는거야
+
+      let aa = 1;
+
+      user1.push(aa);
+
+      const array1 = [1, 2, 3];
+
+      console.log(array1.unshift(4, 5));
+      // expected output: 5
+
+      console.log(array1);
+      // expected output: Array [4, 5, 1, 2, 3]
+
+      const array2 = [1, 2, 3];
+
+      const firstElement = array2.shift();
+
+      console.log(array2);
+      // expected output: Array [2, 3]
+
+      console.log(firstElement);
+      // expected output: 1
+
+      user1.pop();
+      user1.pop();
+      user1.pop();
+      user1.pop();
+      user1.pop();
+      user1.pop();
+      user1.pop();
+      user1.pop();
+      user1.pop();
+      user1.pop();
+      //   console.log(aa); //1
+
+      console.log(user1); //a,b
+    </script>
+  </body>
+</html>

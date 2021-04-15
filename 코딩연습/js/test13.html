@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const obj = {
+        name: "민혁",
+        age: 31, //
+        get getName() {
+          return this.name;
+        },
+        get getAge() {
+          return this.age;
+        },
+        set setName(name) {
+          console.log(name);
+          this.name = name;
+        },
+      };
+
+
+      == //값만 동일하면 같은거로 봄 "true" === true  //true
+      === // 값이랑 타입도 같아야함. "true" === true  //false
+      //a1:c1  //c1   //성재네 집 어디니? 어떤사람이 말해줘 (저기에요.)
+      //   const name = "민혁"; //문자열, 숫자, 불린값, 등등 원시형 데이터타입
+
+      //b1   //f1
+      //   const obj2 = {
+      //     a: 1,
+      //     b: 2,
+      //   }; // 참조형 데이터
+      obj.setName("성재");
+      console.log(obj.getName);
+      console.log(obj.getAge);
+    </script>
+  </body>
+</html>

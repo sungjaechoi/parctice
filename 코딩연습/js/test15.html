@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul>
+      <li>aaaa</li>
+      <li>bbbb</li>
+      <li>cccc</li>
+    </ul>
+    <script>
+      const el_li = document.querySelectorAll("li");
+      const mylovefruit = ["apple", "banana", "kiwi"];
+      const numArray = [1, 2, 3, 4, 5];
+      const userList = [
+        {
+          name: "민혁",
+          age: 10,
+          sex: "man",
+        },
+        {
+          name: "호박",
+          age: 30,
+          sex: "woman",
+        },
+        {
+          name: "가지",
+          age: 80,
+          sex: "man",
+        },
+      ];
+
+      const ggg = userList.filter((user) => {
+        if (user.age > 10) {
+          if (user.sex === "man") {
+            return (user.age = user.age * 100);
+          }
+        }
+      });
+
+      console.log(ggg);
+      const minhyuk = {
+        name: "민혁",
+        age: 31,
+        hasCat: true,
+      };
+
+      //map이라는 배열의 메소드는 새로운 배열을 반환해.
+      const bb = numArray.map((n) => {
+        return n + "개";
+      });
+
+      const cc = numArray.filter((n) => {
+        if (n % 2 === 0) {
+          return n;
+        }
+        //n을 2로나눈 나머지가 0이라면
+      });
+      console.log(cc);
+
+      //   for (const key in minhyuk) {
+      //     //   console.log("개나리가" + key + "개" + minhyuk[key] + "피었습니다.");
+      //     //   console.log(key + ":" + minhyuk[key]);
+
+      //     //   `개나리가 ${key}개  ${key}피었습니다.`
+
+      //     console.log(`${key} :${minhyuk[key]}`);
+      //   }
+
+      //   for (const item in object) {
+      //   }
+
+      //   for (const item of object) {
+      //   }
+
+      //   el_li.forEach((item) => {
+      //     //내용
+      //   });
+
+      //   el_li.forEach((li) => {
+      //     li.addEventListener("click", (e) => {
+      //       li.classList.toggle("on");
+      //     });
+      //   });
+
+      //   mylovefruit.forEach((fruit) => {
+      //     console.log(fruit + "존나조앙");
+      //   });
+
+      //   [남자1,남자2,남자3]
+      // cosnt 훈련소 = (남자)=>{남자+입대};
+    </script>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .list {
+        border: 1px solid black;
+        padding: 20px;
+        display: none;
+      }
+      .list.view {
+        display: block;
+      }
+      li.on {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="btn" type="button">버튼</button>
+    <ul class="list">
+      <li>item1</li>
+      <li>item2</li>
+      <li>item3</li>
+    </ul>
+
+    <script>
+      // 버튼 클릭시 .view 토글.
+      const btn = document.querySelector(".btn");
+      const list = document.querySelector(".list");
+      const listOn = document.querySelectorAll(".list li");
+      btn.addEventListener("click", () => {
+        list.classList.toggle("view");
+      });
+
+      for (let i = 0; i < listOn.length; i++) {
+        //포문어쩌고
+        listOn[i].addEventListener("click", () => {
+          //각각 listOn순회하면서 이벤트 리스너를 단다.
+
+          for (let j = 0; j < listOn.length; j++) {
+            listOn[j].classList.remove("on");
+          }
+          //리스트온 초기화
+
+          listOn[i].classList.add("on");
+          //이벤트 리스너 달릴 시점에 인덱스라서..자기 자신임
+        });
+      }
+      // (".list li")클릭시
+      // 아이템 전체 classRemove('on')
+      // 클릭된 아이템 classAdd('on')
+    </script>
+  </body>
+</html>
