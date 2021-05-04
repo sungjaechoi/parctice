@@ -1,0 +1,136 @@
+.w1140 {
+  width: 1140px;
+  margin: 0 auto;
+}
+.help-area {
+  background: #0055b8;
+  padding: 60px 0;
+  .inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .title-text-area {
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 50px;
+      color: #fff;
+      h3 {
+      }
+      span {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 26px;
+      }
+    }
+    .icon-text-area {
+      margin-top: 50px;
+      .icon-list {
+        display: flex;
+        .icon-item {
+          display: flex;
+          flex-direction: column;
+          & + .icon-item {
+            margin-left: 80px;
+          }
+          .text-area {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 14px;
+            font-wight: 300;
+            line-height: 22px;
+            color: #fff;
+            span {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.call {
+  background: url(/img/call.svg) no-repeat center;
+  height: 36px;
+}
+.mail {
+  background: url(/img/emil.svg) no-repeat center;
+  height: 36px;
+}
+.kakao {
+  background: url(/img/kakao.svg) no-repeat center;
+  height: 36px;
+}
+.qna-area {
+  .inner {
+    .search-area {
+      padding: 20px 0;
+      form {
+        .search-box {
+          display: flex;
+          border-bottom: 1px solid #cbcbcb;
+          #search {
+            border: none;
+            width: 96%;
+            font-size: 16px;
+            font-weight: 300;
+            color: #cbcbcb;
+          }
+          .search-img {
+            a {
+              display: block;
+              background: url(/img/search_icon.svg) no-repeat center;
+              padding-right: 30px;
+              width: 4%;
+              height: 36px;
+            }
+          }
+        }
+      }
+    }
+    .btn-area {
+      .btn-list {
+        display: flex;
+        .btn-item {
+          & + .btn-item {
+            margin-left: 10px;
+          }
+          button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            background-color: #fff;
+            border: 1px solid #cbcbcb;
+            border-radius: 3px;
+            color: #838383;
+            width: 128px;
+            height: 48px;
+            font-size: 16px;
+            font-weight: 300;
+          }
+
+          &.on {
+            > button {
+              background-color: #0055b8;
+              border: 1px solid #0055b8;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+    .content-raper {
+      .content-area {
+        width: 100%;
+        display: none;
+        &.on {
+          display: block;
+        }
+      }
+    }
+  }
+}

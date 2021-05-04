@@ -1,0 +1,619 @@
+.btn {
+  background-color: rgb(0, 85, 184);
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(0, 85, 184);
+  border-radius: 8px;
+}
+
+#header {
+  position: relative;
+  .inner {
+    width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .longo-area {
+      h1 {
+        a {
+          display: block;
+          padding: 10px 0;
+          img {
+          }
+        }
+      }
+    }
+    .menu-area {
+      margin-right: 420px;
+      .menu-list {
+        display: flex;
+        .menu-itme {
+          & + .menu-itme {
+            margin-left: 40px;
+          }
+          a {
+            display: block;
+            padding: 20px 0;
+            font-size: 14px;
+            font-weight: 400;
+            text-decoration: none;
+            color: rgb(131, 131, 131);
+            h2 {
+            }
+          }
+          .bg100 {
+            &.on {
+              display: block;
+            }
+
+            background-color: rgb(255, 255, 255);
+            // border-top: 3px solid rgba(0, 0, 0, 0.1);
+            // border-bottom: 3px solid rgba(0, 0, 0, 0.1);
+            box-shadow: rgb(0, 0, 0 / 8%) 0px 0px 8px;
+            display: none;
+            position: absolute;
+            top: 83px;
+            right: 0;
+            width: 100%;
+            height: 130px;
+            .menu-inner {
+              width: 1200px;
+              margin: 0 auto;
+              padding: 12px 0;
+              .sub-menu-list {
+                display: flex;
+                justify-content: center;
+                .sub-menu-item {
+                  &:hover {
+                    .img-area {
+                      img {
+                        opacity: 1;
+                        transition: 0.3s;
+                      }
+                    }
+                    .text-area {
+                      p {
+                        color: #0055b8;
+                        font-weight: bold;
+                      }
+                    }
+                  }
+                  & + .sub-menu-item {
+                    margin-left: 60px;
+                  }
+                  a {
+                    .img-area {
+                      img {
+                        height: 60px;
+                        opacity: 0.4;
+                      }
+                    }
+                    .text-area {
+                      p {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .user-area {
+      display: flex;
+      align-items: center;
+      .log-area {
+        margin-right: 20px;
+        a {
+          display: block;
+          padding: 20px 0;
+          font-size: 14px;
+          font-weight: 400;
+          text-decoration: none;
+          color: rgb(131, 131, 131);
+        }
+      }
+      .sb-area {
+        position: relative;
+        a {
+          display: block;
+          padding: 10px 0;
+          img {
+          }
+        }
+        .side-bg {
+          // display: none;
+          width: 435px;
+          height: 100%;
+          position: fixed;
+          transform: translateX(100%);
+          transition: 1s;
+          background-color: #fff;
+          // 검색 찾아서 공부 숙제임
+          z-index: 1;
+          //속성은 위치 지정 요소,
+          // 하위 플렉스 아이템의 Z축 순서를 지정
+          //더 큰 z-index 값을 가진 요소가 작은 값의 요소 위를 덮는다
+          // position: absolute;
+          // right: -366px;
+          top: 0;
+          &.on {
+            transform: translateX(0%);
+            & + .side-bg-dim {
+              opacity: 1;
+              visibility: visible;
+            }
+          }
+          .sb-inner {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            color: rgb(28, 28, 28);
+            font-size: 18px;
+            font-weight: 400;
+            .sb-title-area {
+            }
+            .sb-basket-area {
+              font-weight: 300;
+              p {
+                margin-bottom: 10px;
+              }
+              p {
+                text-align: center;
+              }
+            }
+            .sb-product-area {
+              font-size: 16px;
+              padding: 10px;
+              .s-p-list {
+                display: flex;
+                flex-direction: column;
+                .s-p-item {
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  padding: 15px;
+                  border-radius: 8px;
+                  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+
+                  & + .s-p-item {
+                    margin-top: 10px;
+                  }
+                  .s-p-img-area {
+                    img {
+                      height: 100px;
+                      width: 100px;
+                    }
+                  }
+                  .s-p-text-area {
+                    padding: 0 10px;
+                    p {
+                    }
+                    span {
+                    }
+                  }
+                  .s-p-btn {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    font-size: 14px;
+                    font-weight: 400;
+                    button {
+                      padding: 10px 16px;
+                      margin-bottom: 7px;
+                    }
+                    span {
+                      color: rgb(0, 85, 184);
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .side-bg-dim {
+          width: 100%;
+          height: 100%;
+          position: fixed;
+          top: 0;
+          left: 0;
+          background: rgba(0, 0, 0, 0.4);
+          //RGBA 마지막 소수점이 투명도
+          opacity: 0;
+          //투명도 속성 1이 기본값이며 0부터 요소가 투명해보이지 않음
+          //0.0이상 1.0이하
+          visibility: hidden;
+          //요소가 숨겨지나 공간은 남는다
+          //display:none 인경우 요소도 숨겨지고 공간도 없어진다.
+          transition: 1s;
+          //같은 속성의 값이여야만 실행된다.
+        }
+      }
+    }
+  }
+}
+#footer {
+  background-color: rgb(28, 28, 28);
+  .footer-nav {
+    border-bottom: 1px solid rgb(131, 131, 131);
+    .inner {
+      width: 1200px;
+      margin: 0 auto;
+      padding: 22px 0;
+      display: flex;
+      justify-content: space-between;
+      .clause-area {
+        .clause-list {
+          display: flex;
+          .clause-item {
+            & + .clause-item {
+              margin-left: 25px;
+            }
+            a {
+              text-decoration: none;
+              font-size: 12px;
+              color: rgb(203, 203, 203);
+              font-weight: 400;
+            }
+          }
+        }
+      }
+      .footer-user-area {
+        .user-list {
+          display: flex;
+          .user-item {
+            & + .user-item {
+              margin-left: 30px;
+            }
+            a {
+              text-decoration: none;
+              font-size: 14px;
+              color: rgb(240, 240, 240);
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+  }
+  .address {
+    padding: 30px 0;
+    .inner {
+      width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      .address-area {
+        color: rgb(203, 203, 203);
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 20px;
+        strong {
+          font-weight: 700;
+        }
+        .Copyright {
+          padding-top: 18px;
+          font-size: 14px;
+          font-weight: 300px;
+        }
+      }
+      .longo-sns-area {
+        width: 300px;
+        display: flex;
+        justify-content: space-between;
+        .longo-area {
+          a {
+            display: block;
+            img {
+            }
+          }
+        }
+        .sns-area {
+          a {
+            display: block;
+            img {
+            }
+            img {
+            }
+          }
+        }
+      }
+    }
+  }
+}
+#container {
+  margin-top: 100px;
+  .main-contents-area {
+    background: url(/img/main.png) no-repeat center 185px;
+    background-size: 30%;
+    .inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      height: 671px;
+      background-size: 30%;
+      .title-area {
+        font-size: 38px;
+        font-weight: 400;
+        margin-bottom: 28px;
+        line-height: 50px;
+      }
+      .text-area {
+        font-size: 16px;
+        font-weight: 300;
+      }
+      .bottom-arrow {
+        position: relative;
+        span {
+          position: absolute;
+          top: 456px;
+          right: -15px;
+          display: block;
+          background: url(/img/하단화살표.svg) no-repeat center;
+          width: 48px;
+          height: 48px;
+        }
+      }
+    }
+  }
+  .main-contents-explain-area {
+    background-color: #000c24;
+    color: #fff;
+    .inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 100px 0;
+      .title-text-area {
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .title-area {
+          font-size: 38px;
+          font-weight: 400;
+          margin-bottom: 55px;
+        }
+        .text-area {
+          font-size: 14px;
+          font-weight: 300;
+          margin-bottom: 40px;
+          span {
+            display: block;
+            text-align: center;
+            margin-bottom: 10px;
+          }
+        }
+        .right-arrow-area {
+          a {
+            text-decoration: none;
+            color: #f0f0f0;
+            display: flex;
+            .right-arrow {
+              background: url(/img/우측화살표.svg) no-repeat center;
+              width: 18px;
+              height: 18px;
+            }
+          }
+        }
+      }
+      .graph-area {
+        order: 1;
+        color: #f0f0f0;
+        text-align: center;
+        .title-area {
+          font-size: 12px;
+          font-weight: 300;
+          padding: 0 0 30px 0;
+        }
+        .graph-box {
+          display: flex;
+          margin-bottom: 55px;
+          .blue-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            font-size: 16px;
+            font-weight: 400;
+            margin-right: 6px;
+            p {
+              width: 85px;
+              height: 100px;
+              background-color: #0055b8;
+              border-radius: 5px;
+              padding: 20px 10px;
+            }
+            span {
+              font-size: 14px;
+              font-weight: 400;
+              margin-top: 10px;
+            }
+          }
+          .gray-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            font-weight: 400;
+
+            p {
+              width: 85px;
+              height: 200px;
+              background-color: #cbcbcb;
+              border-radius: 5px;
+              padding: 20px 10px;
+            }
+            span {
+              font-size: 14px;
+              font-weight: 400;
+              margin-top: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .product-report-area {
+    .inner {
+      width: 1430px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: flex-end;
+      .title-text-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .title-area {
+          font-size: 38px;
+          font-weight: 400;
+          line-height: 50px;
+          h3 {
+            display: flex;
+            flex-direction: column;
+          }
+        }
+        .text-area {
+          font-size: 16px;
+          font-weight: 300;
+          line-height: 25px;
+          margin-top: 30px;
+          color: #1c1c1c;
+          display: flex;
+          flex-direction: column;
+        }
+        .right-arrow-area {
+          margin-top: 40px;
+          a {
+            text-decoration: none;
+            color: #0055b8;
+            display: flex;
+            .right-arrow {
+              background: url(/img/우측파란화살표.svg) no-repeat center;
+              width: 18px;
+              height: 18px;
+            }
+          }
+        }
+      }
+      .bg-box {
+        background: url(/img/blade.png) no-repeat 173px 183px/900px auto;
+        width: 900px;
+        height: 850px;
+      }
+    }
+  }
+  .product-advice-area {
+    background-color: #f0f0f0;
+    padding: 60px 0;
+    .inner {
+      width: 1350px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      .title-text-box {
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .title-area {
+          font-size: 38px;
+          font-weight: 400;
+          line-height: 50px;
+          h3 {
+            display: flex;
+            flex-direction: column;
+          }
+        }
+        .text-area {
+          font-size: 16px;
+          font-weight: 300;
+          line-height: 25px;
+          margin-top: 30px;
+          color: #1c1c1c;
+          display: flex;
+          flex-direction: column;
+        }
+        .right-arrow-area {
+          margin-top: 40px;
+          a {
+            text-decoration: none;
+            color: #0055b8;
+            display: flex;
+            .right-arrow {
+              background: url(/img/우측파란화살표.svg) no-repeat center;
+              width: 18px;
+              height: 18px;
+            }
+          }
+        }
+      }
+      .bg-box {
+        order: 1;
+        background: url(/img/products.png) no-repeat center/570px auto;
+        width: 570px;
+        height: 570px;
+        margin-right: 160px;
+        // img {
+        //   height: 570px;
+        // }
+        // background: url(/img/blade.png) no-repeat right;
+        // width: 900px;
+        // height: 700px;
+      }
+    }
+  }
+  .porduct-report-end-area {
+    background-color: #f8f8f8;
+    padding: 50px 0;
+    .inner {
+      width: 1350px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      .title-text-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 200px;
+        .title-area {
+          font-size: 38px;
+          font-weight: 400;
+          line-height: 50px;
+          h3 {
+            display: flex;
+            flex-direction: column;
+          }
+        }
+        .text-area {
+          font-size: 16px;
+          font-weight: 300;
+          line-height: 25px;
+          margin-top: 30px;
+          color: #1c1c1c;
+          display: flex;
+          flex-direction: column;
+        }
+        .section-btn {
+          margin-top: 60px;
+          button {
+            height: 60px;
+            width: 195px;
+            font-size: 18px;
+            font-weight: 400;
+          }
+        }
+      }
+      .bg-box {
+        background: url(/img/trial_set.png) no-repeat center/460px auto;
+        width: 460px;
+        height: 460px;
+      }
+    }
+  }
+}
