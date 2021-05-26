@@ -1,0 +1,136 @@
+.layer-popup-area {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 10000;
+
+  //오만가지 할거. (기존에 기준을 깨트리거나 등등)
+  &.now-editing {
+  }
+  &.popup_on {
+    display: block;
+  }
+  //공통 규격이 바뀌지 않는 이상 그냥 쓰면 되는 애들.
+  &.sm {
+    .layer-popup-inner {
+      width: 280px;
+      height: 500px;
+      .layer-popup-contents {
+        width: 285px;
+        .layer-popup-contents-inner {
+          img {
+            width: 265px;
+          }
+        }
+      }
+      .layer-popup-footer {
+        width: 285px;
+      }
+    }
+  }
+  &.medium {
+  }
+
+  &.not-scroll {
+    .layer-popup-inner {
+      .layer-popup-contents {
+        height: initial;
+        overflow: unset;
+      }
+    }
+  }
+  .layer-popup-inner {
+    $pop-height: 700px;
+    $pop-header-height: 0px;
+    $pop-header-footer: 30px;
+    $pop-header-contents: $pop-height - $pop-header-height - $pop-header-footer;
+    width: 400px;
+    height: $pop-height;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    .layer-popup-header {
+      background: #fee600;
+      height: $pop-header-height;
+    }
+    .layer-popup-contents {
+      height: $pop-header-contents;
+      overflow-y: auto;
+      height: 450px;
+      background-color: #fee600;
+      border: 9px solid #fee600;
+      flex-grow: 1;
+      .layer-popup-contents-inner {
+      }
+    }
+    .layer-popup-footer {
+      width: 100%;
+      height: $pop-header-footer;
+      background-color: #fee600;
+      .checkbox-area {
+        position: absolute;
+        bottom: 15px;
+        left: 9px;
+      }
+      .layer-popup-close-btn {
+        position: absolute;
+        width: 45px;
+        height: 25px;
+        bottom: 12px;
+        right: 10px;
+        border: none;
+        cursor: pointer;
+        background: #ffc20d;
+      }
+    }
+  }
+}
+// @media (min-width: 0) and(max-width:420px) {
+//   .layer-popup-area {
+//     .layer-popup-inner {
+//       $pop-height: 500px;
+//       $pop-header-height: 0px;
+//       $pop-header-footer: 30px;
+//       $pop-header-contents: $pop-height - $pop-header-height -
+//         $pop-header-footer;
+//       width: 280px;
+//       height: $pop-height;
+//       background: white;
+//       display: flex;
+//       flex-direction: column;
+//       position: absolute;
+//       top: 0;
+//       bottom: 0;
+//       left: 0;
+//       right: 0;
+//       margin: auto;
+//       .layer-popup-contents {
+//         height: $pop-header-contents;
+//         .layer-popup-contents-inner {
+//           img {
+//             width: 260px;
+//           }
+//         }
+//       }
+//       .layer-popup-footer {
+//         .checkbox-area {
+//           font-size: 14px;
+//         }
+//         .layer-popup-close-btn {
+//           font-size: 14px;
+//         }
+//       }
+//     }
+//   }
+// }
