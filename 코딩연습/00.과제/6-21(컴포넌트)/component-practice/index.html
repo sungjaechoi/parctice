@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>component</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="./img/my-picture.jpg" />
+  </head>
+  <body>
+    <header include-html="./header/header.html"></header>
+    <article id="component">
+      <h2 class="sr-only">본문</h2>
+      <section class="teb-container">
+        <div class="teb-menu-area">
+          <strong class="sr-only">탭 메뉴</strong>
+          <ul class="tab-list title-xs">
+            <li class="on">컬러 가이드</li>
+            <li>폰트 가이드</li>
+            <li>폼 가이드</li>
+            <li>버튼 가이드</li>
+            <li>기타 공통 요소</li>
+          </ul>
+        </div>
+        <div class="tab-content">
+          <strong class="sr-only">탭 컨텐츠</strong>
+          <ul class="tab-content-list">
+            <li class="tab-content-item pd20px on">
+              <div class="color-chip-area">
+                <h3 class="title color-pink">primary</h3>
+                <ul class="color-chip-list">
+                  <li class="color-chip bg-Primary-light">#00AD50</li>
+                  <li class="color-chip bg-Primary-middle">#0D643A</li>
+                  <li class="color-chip bg-Primary-dark">#06522D</li>
+                </ul>
+              </div>
+              <div class="color-chip-area">
+                <h3 class="title color-pink">Secondary</h3>
+                <ul class="color-chip-list">
+                  <li class="color-chip bg-Secondary-dark">#FFAC00</li>
+                  <li class="color-chip bg-Secondary-light">#FF8400</li>
+                </ul>
+              </div>
+              <div class="color-chip-area">
+                <h3 class="title color-pink">Error</h3>
+                <ul class="color-chip-list">
+                  <li class="color-chip bg-Error-dark">#FF0000</li>
+                  <li class="color-chip bg-Error-light">#E50000</li>
+                </ul>
+              </div>
+              <div class="color-chip-area">
+                <h3 class="title color-pink">Grayscale</h3>
+                <ul class="color-chip-list">
+                  <li class="color-chip color-pink bg-Grayscale-0-ff">
+                    #FFFFFF
+                  </li>
+                  <li class="color-chip color-pink bg-Grayscale-1-f5">
+                    #F5F5F5
+                  </li>
+                  <li class="color-chip color-pink bg-Grayscale-2-e5">
+                    #E5E5E5
+                  </li>
+                  <li class="color-chip color-pink bg-Grayscale-3-cc">
+                    #CCCCCC
+                  </li>
+                  <li class="color-chip bg-Grayscale-4-99">#999999</li>
+                  <li class="color-chip bg-Grayscale-5-66">#666666</li>
+                  <li class="color-chip bg-Grayscale-6-47">#474747</li>
+                  <li class="color-chip bg-Grayscale-7-1c">#1C1C1C</li>
+                  <li class="color-chip bg-Grayscale-8-00">#000000</li>
+                </ul>
+              </div>
+            </li>
+            <li class="tab-content-item">
+              <div class="font-guide-container">
+                <h3 class="title">Noto Sans KR Font Family</h3>
+                <div class="font-guide-area">
+                  <div class="body-font-area">
+                    <ul class="body-font-list">
+                      <li class="body-font-item text-xs">본문 텍스트 XS</li>
+                      <li class="body-font-item text-sm">본문 텍스트 S</li>
+                      <li class="body-font-item text-md">본문 텍스트 M</li>
+                      <li class="body-font-item">본문 텍스트 L</li>
+                    </ul>
+                  </div>
+                  <div class="title-font-area">
+                    <ul class="title-font-list">
+                      <li class="title-font-item title-xs">타이틀 텍스트 XS</li>
+                      <li class="title-font-item title-sm">타이틀 텍스트 S</li>
+                      <li class="title-font-item title-md">타이틀 텍스트 M</li>
+                      <li class="title-font-item title-lg">타이틀 텍스트 L</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="tab-content-item">
+              <div class="form-guide-container">
+                <div class="form-guide-area">
+                  <h3 class="title color-pink">체크박스</h3>
+                  <ul class="form-guide-list">
+                    <li class="form-guide margin39">
+                      <form action="#">
+                        <fieldset>
+                          <legend class="sr-only">체크박스</legend>
+                          <div class="check-box-area">
+                            <input
+                              type="checkbox"
+                              name="Checked1"
+                              id="Checked1-cd"
+                            />
+                            <label
+                              for="Checked1-cd"
+                              class="Checked1-box color-pink"
+                            >
+                              - Checked 1</label
+                            >
+                          </div>
+                          <div class="check-box-area">
+                            <input
+                              type="checkbox"
+                              name="Checked2"
+                              id="Checked2-cd"
+                            />
+                            <label
+                              for="Checked2-cd"
+                              class="Checked2-box color-pink"
+                            >
+                              - Checked 2</label
+                            >
+                          </div>
+                        </fieldset>
+                      </form>
+                    </li>
+                  </ul>
+                </div>
+                <div class="form-guide-area margin39">
+                  <h3 class="title color-pink">라디오 버튼</h3>
+                  <ul class="form-guide-list">
+                    <li class="form-guide margin39">
+                      <form action="#">
+                        <fieldset>
+                          <legend class="sr-only">라디오 버튼</legend>
+                          <div class="radio-box-area">
+                            <input
+                              type="radio"
+                              name="Checked"
+                              id="Checked-rd"
+                            />
+                            <label
+                              for="Checked-rd"
+                              class="color-pink radio-btn"
+                            >
+                              - Checked</label
+                            >
+                            <input
+                              type="radio"
+                              name="Checked"
+                              id="Checked-rd2"
+                            />
+                            <label
+                              for="Checked-rd2"
+                              class="color-pink radio-btn"
+                            >
+                              - Checked</label
+                            >
+                          </div>
+                        </fieldset>
+                      </form>
+                    </li>
+                  </ul>
+                </div>
+                <div class="form-guide-area">
+                  <h3 class="title color-pink">인풋 박스</h3>
+                  <ul class="form-guide-list">
+                    <li class="form-guide">
+                      <form action="#">
+                        <fieldset>
+                          <legend class="sr-only">인풋박스</legend>
+                          <div class="input-box-area margin16">
+                            <input
+                              type="text"
+                              name="text-box"
+                              placeholder="플레이스 홀더"
+                              id="input-box"
+                            />
+                            <label for="input-box" class="sr-only"></label>
+                          </div>
+                        </fieldset>
+                      </form>
+                    </li>
+                  </ul>
+                </div>
+                <div class="form-guide-area">
+                  <h3 class="title color-pink">텍스트에리어 박스</h3>
+                  <ul class="form-guide-list">
+                    <li class="form-guide">
+                      <form action="#">
+                        <fieldset>
+                          <legend class="sr-only">텍스트에리어</legend>
+                          <div class="text-area margin16">
+                            <textarea
+                              name="text-box"
+                              id="text-box"
+                              cols="30"
+                              rows="10"
+                            ></textarea>
+                            <label for="text-box" class="sr-only"></label>
+                          </div>
+                        </fieldset>
+                      </form>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="tab-content-item pd50px">
+              <div class="button-guide-area">
+                <div class="button-area">
+                  <h3 class="title color-pink title-xs">버튼</h3>
+                  <ul class="button-list">
+                    <li class="button-item">
+                      <button type="button" class="btn-gray btn-sm text-sm">
+                        버튼 S
+                      </button>
+                      <button type="button" class="btn-green btn-sm text-sm">
+                        버튼 S
+                      </button>
+                      <button type="button" class="btn-white btn-sm text-sm">
+                        버튼 S
+                      </button>
+                    </li>
+                    <li class="button-item">
+                      <button type="button" class="btn-gray btn-md text-md">
+                        버튼 M
+                      </button>
+                      <button type="button" class="btn-green btn-md text-md">
+                        버튼 M
+                      </button>
+                      <button type="button" class="btn-white btn-md text-md">
+                        버튼 M
+                      </button>
+                    </li>
+                    <li class="button-item">
+                      <button type="button" class="btn-gray btn-lg text-lg">
+                        버튼 L
+                      </button>
+                      <button type="button" class="btn-green btn-lg text-lg">
+                        버튼 L
+                      </button>
+                      <button type="button" class="btn-white btn-lg text-lg">
+                        버튼 L
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="button-round-area">
+                  <h3 class="title color-pink title-xs">라운드형 버튼</h3>
+                  <ul class="button-round-list">
+                    <li class="button-round-item">
+                      <button
+                        type="button"
+                        class="btn-black btn-sm btn-round text-sm"
+                      >
+                        버튼 S
+                      </button>
+                      <button
+                        type="button"
+                        class="btn-green btn-sm btn-round text-sm"
+                      >
+                        버튼 S
+                      </button>
+                      <button
+                        type="button"
+                        class="btn-white btn-sm btn-round text-sm"
+                      >
+                        버튼 S
+                      </button>
+                    </li>
+                    <li class="button-round-item">
+                      <button
+                        type="button"
+                        class="btn-black btn-md btn-round text-md"
+                      >
+                        버튼 M
+                      </button>
+                      <button
+                        type="button"
+                        class="btn-green btn-md btn-round text-md"
+                      >
+                        버튼 M
+                      </button>
+                      <button
+                        type="button"
+                        class="btn-white btn-md btn-round text-md"
+                      >
+                        버튼 M
+                      </button>
+                    </li>
+                    <li class="button-round-item">
+                      <button
+                        type="button"
+                        class="btn-black btn-lg btn-round text-lg"
+                      >
+                        버튼 L
+                      </button>
+                      <button
+                        type="button"
+                        class="btn-green btn-lg btn-round text-lg"
+                      >
+                        버튼 L
+                      </button>
+                      <button
+                        type="button"
+                        class="btn-white btn-lg btn-round text-lg"
+                      >
+                        버튼 L
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="tab-button-area">
+                  <h3 class="title color-pink title-xs">탭 버튼</h3>
+                  <ul class="tab-button-list">
+                    <li class="tab-button-item">
+                      <button
+                        type="button"
+                        class="
+                          btn-revitalize-tab-green btn-revitalize-tab-size
+                          title-xs
+                        "
+                      >
+                        활성화 탭
+                      </button>
+                      <button
+                        type="button"
+                        class="
+                          btn-deactivate-tab-white btn-deactivate-tab-size
+                          title-xs
+                        "
+                      >
+                        비활성화 탭
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="tab-content-item pd20px">
+              <div class="etc-guide-area">
+                <div class="bread-scrum">
+                  <h3 class="title color-pink title-xs margin16">
+                    브레드 스크럼
+                  </h3>
+                  <ul class="bread-list margin40">
+                    <li class="bread-item">
+                      <a href="#" class="home-icon sr-only">홈으로</a>
+                    </li>
+                    <li class="bread-item">
+                      <a href="#" class="depth1">1 뎁스 페이지</a>
+                    </li>
+                    <li class="bread-item">
+                      <a href="#" class="depth2">2 뎁스 페이지</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="page-nation-area margin40">
+                  <h3 class="title color-pink title-xs">페이지네이션</h3>
+                  <!-- 개발 확인사항 -->
+                  <!-- arrow 클레스에 view 클래스 추가시에 화살표 노출,(기본숨김)-->
+                  <ul class="page-nation">
+                    <li class="page-item arrow go-back-first view">
+                      <a href="#" class="page-number sr-only">처음으로</a>
+                    </li>
+                    <li class="page-item arrow go-prev view">
+                      <a href="#" class="page-number sr-only">이전으로</a>
+                    </li>
+                    <li class="page-item on">
+                      <a href="#" class="page-number">1</a>
+                    </li>
+                    <li class="page-item">
+                      <a href="#" class="page-number">2</a>
+                    </li>
+                    <li class="page-item">
+                      <a href="#" class="page-number">3</a>
+                    </li>
+                    <li class="page-item">
+                      <a href="#" class="page-number">4</a>
+                    </li>
+                    <li class="page-item">
+                      <a href="#" class="page-number">5</a>
+                    </li>
+                    <li class="page-item">
+                      <a href="#" class="page-number">6</a>
+                    </li>
+                    <li class="page-item">
+                      <a href="#" class="page-number">7</a>
+                    </li>
+                    <li class="page-item">
+                      <a href="#" class="page-number">8</a>
+                    </li>
+                    <li class="page-item">
+                      <a href="#" class="page-number">9</a>
+                    </li>
+                    <li class="page-item">
+                      <a href="#" class="page-number">10</a>
+                    </li>
+                    <li class="page-item arrow go-next view">
+                      <a href="#" class="page-number sr-only">다음으로</a>
+                    </li>
+                    <li class="page-item arrow go-end view">
+                      <a href="#" class="page-number sr-only">마지막으로</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="quick-view-container">
+                  <h3 class="title color-pink margin16 title-xs">
+                    퀵 뷰
+                    <span>(우측참조)</span>
+                  </h3>
+                  <div class="quick-area">
+                    <div class="quick-choices">
+                      <ul class="quick-list">
+                        <li class="quick-item">
+                          <a href="#" class="quick">
+                            <div class="quck-icon mypage"></div>
+                            <p class="icon-title">마이페이지</p>
+                          </a>
+                        </li>
+                        <li class="quick-item">
+                          <a href="#" class="quick">
+                            <div class="quck-icon until-car"></div>
+                            <span class="amount">1</span>
+                            <p class="icon-title">최근본차량</p>
+                          </a>
+                        </li>
+                        <li class="quick-item">
+                          <a href="#" class="quick">
+                            <div class="quck-icon attention-car"></div>
+                            <span class="amount">1</span>
+                            <p class="icon-title">관심차량</p>
+                          </a>
+                        </li>
+                        <li class="quick-item">
+                          <a href="#" class="quick">
+                            <div class="quck-icon car-comparison"></div>
+                            <span class="amount">1</span>
+                            <p class="icon-title">차량비교</p>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="top-btn-area">
+                      <button type="button" class="top-btn sr-only">top</button>
+                    </div>
+                    <div class="quick-call-area">
+                      <a href="#" class="quick-call sr-only">콜센터</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </article>
+    <footer include-html="./footer/footer.html"></footer>
+    <script src="assets/js/helper.js"></script>
+    <script src="./assets/js/include.js"></script>
+    <script src="./assets/js/common.js"></script>
+  </body>
+</html>

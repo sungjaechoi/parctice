@@ -1,0 +1,1106 @@
+//title
+
+.text-xs {
+  font-size: 13px;
+  line-height: 18px;
+}
+.text-sm {
+  font-size: 14px;
+  line-height: 20px;
+}
+.text-md {
+  font-size: 16px;
+  line-height: 23px;
+}
+.text-lg {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.title-xs {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+}
+.title-sm {
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: bold;
+}
+.title-md {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: bold;
+}
+.title-lg {
+  font-size: 42px;
+  line-height: 42px;
+  font-weight: bold;
+}
+
+@include M {
+  .text-xs {
+    font-size: 10px;
+    line-height: 15px;
+  }
+  .text-sm {
+    font-size: 11px;
+    line-height: 17px;
+  }
+  .text-md {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .text-lg {
+    font-size: 15px;
+    line-height: 23px;
+  }
+
+  .title-xs {
+    font-size: 15px;
+    line-height: 23px;
+    font-weight: bold;
+  }
+  .title-sm {
+    font-size: 19px;
+    line-height: 19px;
+    font-weight: bold;
+  }
+  .title-md {
+    font-size: 27px;
+    line-height: 27px;
+    font-weight: bold;
+  }
+  .title-lg {
+    font-size: 33px;
+    line-height: 33px;
+    font-weight: bold;
+  }
+}
+//bg - color
+.bg-Primary-dark {
+  background-color: $Primary-dark;
+}
+.bg-Primary-middle {
+  background-color: $Primary-middle;
+}
+.bg-Primary-light {
+  background-color: $Primary-light;
+}
+.bg-Secondary-dark {
+  background-color: $Secondary-dark;
+}
+.bg-Secondary-light {
+  background-color: $Secondary-light;
+}
+.bg-Error-dark {
+  background-color: $Error-dark;
+}
+.bg-Error-light {
+  background-color: $Error-light;
+}
+
+.bg-Grayscale-0-ff {
+  background-color: $Grayscale-0-ff;
+}
+.bg-Grayscale-1-f5 {
+  background-color: $Grayscale-1-f5;
+}
+.bg-Grayscale-2-e5 {
+  background-color: $Grayscale-2-e5;
+}
+.bg-Grayscale-3-cc {
+  background-color: $Grayscale-3-cc;
+}
+.bg-Grayscale-4-99 {
+  background-color: $Grayscale-4-99;
+}
+.bg-Grayscale-5-66 {
+  background-color: $Grayscale-5-66;
+}
+.bg-Grayscale-6-47 {
+  background-color: $Grayscale-6-47;
+}
+.bg-Grayscale-7-1c {
+  background-color: $Grayscale-7-1c;
+}
+.bg-Grayscale-8-00 {
+  background-color: $Grayscale-8-00;
+}
+// color
+
+.Primary-dark {
+  color: $Primary-dark;
+}
+.Primary-middle {
+  color: $Primary-middle;
+}
+.Primary-light {
+  color: $Primary-light;
+}
+.Secondary-dark {
+  color: $Secondary-dark;
+}
+.Secondary-light {
+  color: $Secondary-light;
+}
+.Error-dark {
+  color: $Error-dark;
+}
+.Error-light {
+  color: $Error-light;
+}
+
+.Grayscale-0-ff {
+  color: $Grayscale-0-ff;
+}
+.Grayscale-1-f5 {
+  color: $Grayscale-1-f5;
+}
+.Grayscale-2-e5 {
+  color: $Grayscale-2-e5;
+}
+.Grayscale-3-cc {
+  color: $Grayscale-3-cc;
+}
+.Grayscale-4-99 {
+  color: $Grayscale-4-99;
+}
+.Grayscale-5-66 {
+  color: $Grayscale-5-66;
+}
+.Grayscale-6-47 {
+  color: $Grayscale-6-47;
+}
+.Grayscale-7-1c {
+  color: $Grayscale-7-1c;
+}
+.Grayscale-8-00 {
+  color: $Grayscale-8-00;
+}
+.color-pink {
+  color: #ff2372 !important;
+}
+.color-fff {
+  color: $Grayscale-0-ff;
+}
+
+//버튼 -폰트,색
+
+.btn-gray {
+  border: none;
+  color: $Grayscale-0-ff;
+  background-color: $Grayscale-4-99;
+  &:hover {
+    background-color: $Grayscale-5-66;
+  }
+}
+.btn-black {
+  border: none;
+  color: $Grayscale-0-ff;
+  background-color: $Grayscale-6-47;
+}
+.btn-green {
+  border: none;
+  color: $Grayscale-0-ff;
+  background-color: $Primary-middle;
+  &:hover {
+    background-color: $Primary-dark;
+  }
+}
+.btn-white {
+  color: $Primary-middle;
+  border: 1px solid $Primary-middle;
+  background-color: $Grayscale-0-ff;
+  &:hover {
+    background-color: #f6faf8;
+  }
+}
+
+// 버튼 - 사이즈
+
+.btn-sm {
+  width: 104px;
+  height: 30px;
+  padding: 5px 20px;
+  &.btn-round {
+    border-radius: 30px;
+  }
+}
+.btn-md {
+  width: 140px;
+  height: 40px;
+  padding: 5px 20px;
+  &.btn-round {
+    border-radius: 40px;
+  }
+}
+.btn-lg {
+  width: 270px;
+  height: 56px;
+  padding: 5px 20px;
+  &.btn-round {
+    border-radius: 50px;
+  }
+}
+
+@include M {
+  .btn-sm {
+    width: 80px;
+    height: 25px;
+    padding: 4px 5px;
+    &.btn-round {
+      border-radius: 30px;
+    }
+  }
+  .btn-md {
+    width: 100px;
+    height: 30px;
+    padding: 6px 7px;
+    &.btn-round {
+      border-radius: 40px;
+    }
+  }
+  .btn-lg {
+    width: 150px;
+    height: 35px;
+    padding: 5px 10px;
+    &.btn-round {
+      border-radius: 50px;
+    }
+  }
+}
+
+// 탭 버튼 -글자색,배경색,폰트크기
+
+.btn-revitalize-tab-green {
+  color: $Grayscale-0-ff;
+  background-color: $Primary-middle;
+  border: 1px solid $Primary-middle;
+  &:hover {
+    background-color: $Primary-dark;
+    border: 1px solid $Primary-dark;
+  }
+}
+.btn-deactivate-tab-white {
+  color: $Grayscale-7-1c;
+  background-color: $Grayscale-0-ff;
+  border: 1px solid $Grayscale-2-e5;
+  &:hover {
+    color: $Grayscale-5-66;
+    background-color: $Grayscale-1-f5;
+    border: 1px solid $Grayscale-2-e5;
+  }
+}
+
+// 탭 버튼 -사이즈
+
+.btn-revitalize-tab-size {
+  width: 256px;
+  height: 60px;
+  padding: 5px 20px;
+}
+.btn-deactivate-tab-size {
+  width: 256px;
+  height: 60px;
+  padding: 5px 20px;
+}
+
+@include M {
+  .btn-revitalize-tab-size {
+    width: 180px;
+    height: 50px;
+    padding: 5px 10px;
+  }
+  .btn-deactivate-tab-size {
+    width: 180px;
+    height: 50px;
+    padding: 5px 10px;
+  }
+}
+
+.tab-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  > li {
+    background-color: $Grayscale-0-ff;
+    color: $Grayscale-7-1c;
+    border: 1px solid $Primary-middle;
+    flex-grow: 1;
+    text-align: center;
+    padding: 10px 0px;
+    &.on {
+      background-color: $Primary-middle;
+      color: $Grayscale-0-ff;
+    }
+    @media (min-width: 757px) {
+      &:hover {
+        background-color: $Primary-dark;
+        color: $Grayscale-0-ff;
+      }
+    }
+  }
+  &::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -37px;
+    right: 15px;
+    background: url(/img/png-clipart-arrow-computer-icons-logo-white-down-arrow-miscellaneous-angle.png)
+      no-repeat center / 30px 30px;
+  }
+}
+@include M {
+  .tab-list {
+    flex-direction: column;
+    position: relative;
+    margin-top: 0;
+    padding-top: 44px;
+    &.opend {
+      height: 45px;
+      overflow: hidden;
+    }
+    > li {
+      &.on {
+        display: block;
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        height: 45px;
+      }
+    }
+  }
+}
+.tab-content {
+  .tab-content-list {
+    .tab-content-item {
+      display: none;
+      padding: 0 60px;
+      &.on {
+        display: block;
+      }
+      @include M {
+        &.pd20px {
+          padding: 0 20px;
+        }
+        &.pd50px {
+          padding: 0 50px;
+        }
+      }
+      .color-chip-area {
+        .title {
+          font-size: 18px;
+          font-weight: bold;
+          margin-bottom: 16px;
+        }
+        .color-chip-list {
+          display: flex;
+          .color-chip {
+            color: #ffffff;
+            width: 118px;
+            height: 46px;
+            padding: 10px 20px;
+            font-size: 18px;
+            line-height: 26px;
+            font-weight: bold;
+            text-align: center;
+            &.primary-light {
+              background: $Primary-light;
+            }
+            & + .color-chip {
+              margin-bottom: 40px;
+              margin-left: 10px;
+            }
+          }
+        }
+        @include M {
+          .color-chip-list {
+            flex-wrap: wrap;
+            .color-chip {
+              width: 48%;
+              margin-bottom: 5px;
+              margin-left: 5px;
+              & + .color-chip {
+                width: 48%;
+                margin-bottom: 5px;
+                margin-left: 5px;
+              }
+            }
+          }
+        }
+      }
+      @include M {
+        .color-chip-area {
+          & + .color-chip-area {
+            margin-top: 25px;
+          }
+        }
+      }
+
+      .font-guide-container {
+        .title {
+          width: 453px;
+          font-size: 18px;
+          font-weight: bold;
+          color: #ff2372;
+          border-bottom: 1px solid #ff2372;
+          padding-bottom: 16px;
+          margin-bottom: 16px;
+        }
+        @include M {
+          .title {
+            width: 226px;
+          }
+        }
+        .font-guide-area {
+          display: flex;
+          .body-font-area {
+            & + .title-font-area {
+              margin-left: 98px;
+            }
+            .body-font-item {
+              & + .body-font-item {
+                margin-top: 16px;
+              }
+            }
+          }
+          .title-font-area {
+            .title-font-item {
+              & + .title-font-item {
+                margin-top: 16px;
+              }
+            }
+          }
+        }
+        @include M {
+          .font-guide-area {
+            flex-direction: column;
+            .body-font-area {
+              & + .title-font-area {
+                margin-left: 0px;
+              }
+            }
+            .title-font-area {
+              margin-top: 15px;
+            }
+          }
+        }
+      }
+      .button-guide-area {
+        .button-area {
+          margin-bottom: 40px;
+          .title {
+          }
+          .button-list {
+            .button-item {
+              > button {
+                & + button {
+                  margin-left: 5px;
+                }
+              }
+              &.button-item {
+                margin-top: 16px;
+              }
+            }
+          }
+        }
+        .button-round-area {
+          margin-bottom: 40px;
+          .title {
+          }
+          .button-round-list {
+            .button-round-item {
+              > button {
+                & + button {
+                  margin-left: 5px;
+                }
+              }
+              &.button-round-item {
+                margin-top: 16px;
+              }
+            }
+          }
+        }
+        .tab-button-area {
+          margin-bottom: 40px;
+          .title {
+          }
+          .tab-button-list {
+            .tab-button-item {
+              > button {
+                & + button {
+                  margin-left: 5px;
+                }
+              }
+              &.tab-button-item {
+                margin-top: 16px;
+              }
+            }
+          }
+        }
+        @include M {
+          .button-area {
+            margin-bottom: 40px;
+            .button-list {
+              .button-item {
+                > button {
+                  margin-bottom: 3px;
+                  & + button {
+                    margin-left: 0px;
+                  }
+                }
+                &.button-item {
+                  margin-top: 16px;
+                }
+              }
+            }
+          }
+          .button-round-area {
+            margin-bottom: 40px;
+            .button-round-list {
+              .button-round-item {
+                > button {
+                  margin-bottom: 3px;
+                  & + button {
+                    margin-left: 0px;
+                  }
+                }
+                &.button-round-item {
+                  margin-top: 16px;
+                }
+              }
+            }
+          }
+          .tab-button-area {
+            margin-bottom: 40px;
+            .tab-button-list {
+              .tab-button-item {
+                > button {
+                  margin-bottom: 5px;
+                  & + button {
+                    margin-left: 0px;
+                  }
+                }
+                &.tab-button-item {
+                  margin-top: 16px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.form-guide-container {
+  .form-guide-area {
+    .title {
+      font-size: 18px;
+      line-height: 26px;
+      font-weight: bold;
+      margin-bottom: 16px;
+    }
+    .form-guide-list {
+      .form-guide {
+        &.margin39 {
+          margin-bottom: 39px;
+        }
+        > form {
+          > fieldset {
+            display: flex;
+            .check-box-area {
+              &.margin16 {
+                margin-bottom: 16px;
+              }
+              font-size: 14px;
+              line-height: 20px;
+              input[type="checkbox"] {
+                position: absolute;
+                left: -88888px;
+                & + .Checked1-box {
+                  display: flex;
+                  align-items: center;
+                  &::before {
+                    content: "";
+                    width: 19px;
+                    height: 19px;
+                    margin-right: 10px;
+                    display: block;
+                    cursor: pointer;
+                    background-color: $Grayscale-0-ff;
+                    border: 1px solid $Grayscale-3-cc;
+                  }
+                  @include M {
+                    &::before {
+                      width: 15px;
+                      height: 15px;
+                    }
+                  }
+                }
+                &:checked {
+                  & + .Checked1-box {
+                    &::before {
+                      content: "";
+                      width: 19px;
+                      height: 19px;
+                      margin-right: 10px;
+                      display: block;
+                      cursor: pointer;
+                      background: url(../../img/black-checked.png) center;
+                    }
+                    @include M {
+                      &::before {
+                        width: 15px;
+                        height: 15px;
+                      }
+                    }
+                  }
+                }
+                & + .Checked2-box {
+                  display: flex;
+                  align-items: center;
+                  &::before {
+                    content: "";
+                    width: 19px;
+                    height: 19px;
+                    margin-right: 10px;
+                    display: block;
+                    cursor: pointer;
+                    background-color: $Grayscale-0-ff;
+                    border: 1px solid $Grayscale-3-cc;
+                  }
+                  @include M {
+                    &::before {
+                      width: 15px;
+                      height: 15px;
+                    }
+                  }
+                }
+                &:checked {
+                  & + .Checked2-box {
+                    &::before {
+                      content: "";
+                      width: 19px;
+                      height: 19px;
+                      margin-right: 10px;
+                      display: block;
+                      cursor: pointer;
+                      background: url(../../img/green-checked.png) center;
+                    }
+                    @include M {
+                      &::before {
+                        width: 15px;
+                        height: 15px;
+                      }
+                    }
+                  }
+                }
+              }
+              & + .check-box-area {
+                margin-left: 16px;
+              }
+            }
+            .radio-box-area {
+              input[type="radio"] {
+                position: absolute;
+                left: -88888px;
+                & + .radio-btn {
+                  display: flex;
+                  margin-bottom: 5px;
+                  &::before {
+                    content: "";
+                    width: 22px;
+                    height: 22px;
+                    margin-right: 10px;
+                    cursor: pointer;
+                    display: block;
+                    background: url(../../img/radio-btn.png) center / cover;
+                  }
+                  @include M {
+                    &::before {
+                      width: 18px;
+                      height: 18px;
+                    }
+                  }
+                }
+                &:checked {
+                  & + .radio-btn {
+                    &::before {
+                      content: "";
+                      width: 22px;
+                      height: 22px;
+                      margin-right: 10px;
+                      display: block;
+                      cursor: pointer;
+                      background: url(../../img/radio-btn-checked.png) center /
+                        cover;
+                    }
+                    @include M {
+                      &::before {
+                        width: 18px;
+                        height: 18px;
+                      }
+                    }
+                  }
+                }
+              }
+              & + .radio-box-area {
+                margin-left: 16px;
+              }
+            }
+            .input-box-area {
+              &.margin16 {
+                margin-bottom: 16px;
+              }
+              font-size: 14px;
+              line-height: 20px;
+              border: 1px solid $Grayscale-3-cc;
+              #input-box {
+                width: 400px;
+                height: 40px;
+                padding: 8px 10px;
+                border: 1px solid transparent;
+                &::placeholder {
+                  font-size: 16px;
+                  color: $Grayscale-3-cc;
+                }
+                &:focus {
+                  border: 1px solid $Primary-middle;
+                  outline: 0;
+                }
+              }
+              & + .input-box-area {
+                margin-left: 16px;
+              }
+            }
+            .text-area {
+              &.margin16 {
+                margin-bottom: 16px;
+              }
+              font-size: 14px;
+              line-height: 20px;
+              border: 1px solid $Grayscale-3-cc;
+              #text-box {
+                width: 1280px;
+                height: 190px;
+                padding: 8px 10px;
+                border: 1px solid transparent;
+                &::placeholder {
+                  font-size: 16px;
+                  color: $Grayscale-3-cc;
+                }
+                &:focus {
+                  border: 1px solid $Primary-middle;
+                  outline: 0;
+                }
+              }
+              & + .text-area {
+                margin-left: 16px;
+              }
+            }
+          }
+          @include M {
+            > fieldset {
+              flex-wrap: wrap;
+              .check-box-area {
+                margin-left: 8px;
+                margin-bottom: 8px;
+                & + .check-box-area {
+                  margin-left: 8px;
+                  margin-bottom: 8px;
+                }
+              }
+              .input-box-area {
+                #input-box {
+                  width: 200px;
+                  height: 10px;
+                  padding: 8px 10px;
+                }
+                & + .input-box-area {
+                  margin-left: 16px;
+                }
+              }
+              .text-area {
+                #text-box {
+                  width: 215px;
+                  height: 40px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.etc-guide-area {
+  .bread-scrum {
+    .title {
+      &.margin16 {
+        margin-bottom: 16px;
+      }
+    }
+    .bread-list {
+      display: flex;
+      &.margin40 {
+        margin-bottom: 40px;
+      }
+      .bread-item {
+        display: flex;
+        .home-icon {
+          display: block;
+          width: 16px;
+          height: 14px;
+          background: url(../../img/home-bread.png);
+        }
+        .depth1 {
+          display: block;
+          text-decoration: none;
+          color: $Grayscale-4-99;
+          font-size: 14px;
+        }
+        .depth2 {
+          display: block;
+          text-decoration: none;
+          color: $Grayscale-4-99;
+          font-size: 14px;
+        }
+        & + .bread-item {
+          &::before {
+            content: "";
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 4px 8px 0px 9px;
+            width: 5px;
+            height: 9px;
+            background: url(../../img/bread-right-arrow.png);
+          }
+        }
+      }
+    }
+  }
+  .page-nation-area {
+    &.margin40 {
+      margin-bottom: 40px;
+    }
+    .title {
+      margin-bottom: 16px;
+    }
+    .page-nation {
+      display: flex;
+      // 11번일때
+      //앞으로가는거, 맨처음으로 가는게 있어야겠지.
+      // 맨 마지막
+      //앞으로가는거, 맨처음으로 가는게 있어야겠지.
+      //뒤로가는거, 맨뒤로가는거 없겠지
+      // 맨 처음
+      //뒤로가는거
+      @include M {
+        :nth-child(8) {
+          display: none;
+        }
+        :nth-child(9) {
+          display: none;
+        }
+        :nth-child(10) {
+          display: none;
+        }
+        :nth-child(11) {
+          display: none;
+        }
+        :nth-child(12) {
+          display: none;
+        }
+      }
+      .page-item {
+        &.arrow {
+          display: none;
+          &.view {
+            display: flex;
+          }
+        }
+        & + .page-item {
+          margin-left: 8px;
+        }
+        @include M {
+          & + .page-item {
+            margin-left: 4px;
+          }
+        }
+
+        &.go-back-first {
+          a {
+            background: url(../../img/left-double-arrow.png) no-repeat center;
+          }
+        }
+        &.go-prev {
+          a {
+            background: url(../../img/left-arrow.png) no-repeat center;
+          }
+        }
+        &.go-next {
+          a {
+            background: url(../../img/right-arrow.png) no-repeat center;
+          }
+        }
+        &.go-end {
+          a {
+            background: url(../../img/right-double-arrow.png) no-repeat center;
+          }
+        }
+        &.on {
+          a {
+            display: flex;
+            background-color: $Primary-middle;
+            border: 1px solid $Primary-middle;
+            color: $Grayscale-0-ff;
+          }
+        }
+        .page-number {
+          font-size: 16px;
+          line-height: 16px;
+          font-weight: 500;
+          @media (min-width: 757px) {
+            &:hover {
+              border: 1px solid $Grayscale-7-1c;
+              background-color: $Grayscale-0-ff;
+              color: $Grayscale-7-1c;
+            }
+          }
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 40px;
+          height: 40px;
+          border: 1px solid #dddddd;
+          background: $Grayscale-0-ff;
+          color: #dddddd;
+          text-decoration: none;
+        }
+        @include M {
+          .page-number {
+            width: 30px;
+            height: 30px;
+            font-size: 14px;
+            line-height: 14px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+  .quick-view-container {
+    .title {
+      span {
+        font-size: 14px;
+        line-height: 20px;
+      }
+      &.margin16 {
+        margin-bottom: 16px;
+      }
+    }
+    .quick-area {
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
+      @include M {
+        display: none;
+      }
+      .quick-choices {
+        width: 121px;
+        height: 479px;
+        background: #ffffff;
+        border: 1px solid #e5e5e5;
+        border-radius: 20px;
+        .quick-list {
+          padding: 30px 0 50px 0;
+          .quick-item {
+            margin-bottom: 25px;
+            .quick {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              font-size: 14px;
+              line-height: 26px;
+              font-weight: 400;
+              text-decoration: none;
+              color: $Grayscale-8-00;
+
+              .quck-icon {
+                margin-bottom: 5px;
+                &.mypage {
+                  width: 55px;
+                  height: 35px;
+                  background: url(../../img/mypage.png) no-repeat center;
+                }
+                &.until-car {
+                  width: 55px;
+                  height: 35px;
+                  background: url(../../img/until-car.png) no-repeat center;
+                }
+                &.attention-car {
+                  width: 55px;
+                  height: 35px;
+                  background: url(../../img/attention-car.png) no-repeat center;
+                }
+                &.car-comparison {
+                  width: 55px;
+                  height: 35px;
+                  background: url(../../img/car-comparison.png) no-repeat center;
+                }
+              }
+              .amount {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 55px;
+                height: 20px;
+                border-radius: 30px;
+                background: $Primary-middle;
+                font-size: 14px;
+                line-height: 20px;
+                color: $Grayscale-0-ff;
+              }
+              .icon-title {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 26px;
+              }
+            }
+          }
+        }
+      }
+      .top-btn-area {
+        position: relative;
+        .top-btn {
+          position: absolute;
+          left: 34px;
+          bottom: -25px;
+          width: 50px;
+          height: 50px;
+          border: none;
+          background: url(../../img/top-btn.png) no-repeat center;
+        }
+      }
+      .quick-call-area {
+        position: relative;
+        .quick-call {
+          display: block;
+          position: absolute;
+          top: 50px;
+          width: 121px;
+          height: 124px;
+          background: url(../../img/quick-call.png) no-repeat center;
+        }
+      }
+    }
+  }
+}
